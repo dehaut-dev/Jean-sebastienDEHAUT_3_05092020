@@ -35,18 +35,19 @@
         .footer{
             &__img{
                 width: 200px;
-                padding-left: 32%;
             }
             &__li{
                 font-size: 1.5rem;
             }
             &__ul{
-                padding-left: 35%;
+                
                 i{
                     font-size: 1.3rem;
                 }
-                .fa-handshake{
+                .fas{
                     font-size: 1rem;
+                    margin-right: 2%;
+                    width: 3px;
                 }
             }
         }
