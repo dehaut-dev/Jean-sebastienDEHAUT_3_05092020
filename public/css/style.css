@@ -147,6 +147,7 @@ body {
 .selection__number {
   font-size: 13px;
   margin-left: -1rem;
+  text-align: center;
   color: #ffffff;
   background-color: #9356DC;
   width: 25px;
@@ -171,9 +172,9 @@ body {
   }
   .selection .selection__number {
     font-size: 15px;
-    width: 35px;
+    width: 30px;
     height: 25px;
-    padding-top: 9px;
+    padding-top: 6px;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -199,7 +200,7 @@ body {
   }
   .selection .selection__number {
     font-size: 15px;
-    width: 35px;
+    width: 30px;
     height: 25px;
     padding-top: 9px;
   }

@@ -48,6 +48,7 @@
     &__number{
         font-size: 13px;
         margin-left: -1rem;
+        text-align: center;
         color: #ffffff;
         background-color: $primaire;
         width: 25px;
@@ -71,9 +72,9 @@
             }
             &__number{
                 font-size: 15px;
-                width: 35px;
+                width: 30px;
                 height: 25px;
-                padding-top: 9px;
+                padding-top: 6px;
             }
         }
     }
@@ -98,8 +99,9 @@
                 }
             }
             &__number{
+                
                 font-size: 15px;
-                width: 35px;
+                width: 30px;
                 height: 25px;
                 padding-top: 9px;
             }
