@@ -1,0 +1,19 @@
+{
+  "name": "projet1",
+  "version": "1.0.0",
+  "description": "projet P3",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dehaut-dev/Jean-sebastienDEHAUT_3_04092020.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dehaut-dev/Jean-sebastienDEHAUT_3_04092020/issues"
+  },
+  "homepage": "https://github.com/dehaut-dev/Jean-sebastienDEHAUT_3_04092020#readme"
+}

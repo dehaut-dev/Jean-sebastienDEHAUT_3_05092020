@@ -1,0 +1,110 @@
+.restaurant{
+    padding-top: 2rem ;
+    background-color: #f6f6f6;
+    padding-left: 1.5rem;
+    padding-bottom: 3rem;
+    font-family: $txt;
+    &__title{
+        font-size: 1.5rem;
+        text-align: left;
+    }
+    &__div{
+        box-shadow: $opacity;
+        border: 0px;
+        border-radius: 25px;
+        margin-bottom: 1.2rem;
+        max-width: 95%;
+        margin-left: 0;
+        transition: opacity 300ms, visibility 0s 0.3s, box-shadow 0.3s;
+        &:hover{
+            opacity: 0.9;
+            box-shadow: $opacity2;
+        }   
+    }
+    &__img{
+        border-radius: 20px 20px 0 0;
+        max-height: 11rem;
+        width: 100%;
+        object-fit: cover;
+    }
+    &__txt{
+        &-title{
+            font-size: 1.2rem;
+            margin-left: 1rem;
+            margin-top: 0.6rem;
+            margin-bottom: 0.4rem;
+            font-weight: bold;
+            
+        }
+        &-txt{
+            font-size: 1.2rem;
+            margin: 0;
+            padding-bottom: 0.7rem;
+            margin-left: 1rem;
+        }
+    }
+    &__fav{
+        font-size: 1.3rem;
+        float: right;
+        margin-right: 1rem;
+        margin-top: -3rem;
+        color: white;
+        
+        i{
+            text-shadow: -1.5px 0 black, 0 1.2px black,1.5px 0 black, 0 -1.5px black;
+            
+            transition: text-shadow 500ms, color 500ms;
+            
+        }
+        :hover{
+            text-shadow: -1px 0 white, 0 1px white,1px 0 white, 0 -1px white ;
+            color: $primaire;
+        }
+    }     
+    &__new{
+        font-size: 0.9rem;
+        position: absolute;
+        z-index: 2;
+        margin-left: 63%;
+        font-weight: bold;
+        background-color: $tertiaire;
+        color: darken($color: $tertiaire, $amount: 40%);
+        padding: 0.3rem 1.55rem;
+        border-radius: 3px;
+    }
+    
+    @media screen and (min-width: 768px){
+        .restaurant{
+            &__title{
+                font-size: 2.5rem;
+                text-align: center;
+            }
+            &__div{
+                margin-bottom: 3rem;
+                margin-left: 1%;   
+            }
+            &__img{
+                border-radius: 20px 20px 0 0;
+                max-height: 20rem;
+                width: 100%;
+                object-fit: cover;
+            }
+            &__txt{
+                &-title{
+                    font-size: 1.5rem;
+                }
+                &-txt{
+                    font-size: 1.5rem;
+                }
+            }
+            &__fav{
+                font-size: 2rem;
+                margin-right: 1.4rem;
+            }     
+            &__new{
+                font-size: 1.5rem;
+                margin-left: 80%;
+            }
+        }
+    }
+}    

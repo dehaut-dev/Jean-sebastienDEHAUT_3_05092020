@@ -1,0 +1,108 @@
+.selection{
+    margin-top: 3rem ;
+    margin-left: 1rem;
+    font-family: $txt;
+    &__title{
+        font-size: 1.5rem;
+        margin-left: -1px;
+        text-align: left;
+        
+    }
+    &__btn{
+        background-color: white;
+        font-size: 1rem;
+        box-shadow: $opacity;
+        border: 0px;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: row;
+        margin-top: 1.5rem;
+        width: 90%;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        transition: opacity 0.5s, background-color 400ms; 
+        &:hover{
+            background-color: lighten($color: $primaire, $amount: 35%);
+            box-shadow: $opacity2;
+            i{
+                color: $primaire;
+                opacity: 1;
+            }
+        }      
+    }
+    &__btn:last-child{
+        margin-bottom: 4.1rem;
+    }
+
+    &__txt{
+        padding-left: 1.5rem;
+        overflow:hidden;
+        text-overflow: ellipsis;
+        white-space:nowrap;
+        i{
+            font-size: 1.1rem;
+            padding-right: 1rem;
+            opacity: 0.6;
+        }
+    }
+    &__number{
+        font-size: 13px;
+        margin-left: -1rem;
+        color: #ffffff;
+        background-color: $primaire;
+        width: 25px;
+        height: 20px;
+        border-radius: 20px;
+        padding-top: 5px;
+    }
+    @media screen and (min-width: 768px){
+        .selection{
+            margin-left: 20%;
+            &__title{
+                padding-left: 5rem;
+                font-size: 35px;
+            }
+            &__btn{
+                width: 60%;
+                font-size: 1.3rem;
+            }
+            &__txt{
+                padding-left: 1.5rem;
+            }
+            &__number{
+                font-size: 15px;
+                width: 35px;
+                height: 25px;
+                padding-top: 9px;
+            }
+        }
+    }
+    @media screen and (min-width: 1024px){
+        .selection{
+            margin-left: 15%;
+            &__title{
+                padding-left: 15rem;
+                font-size: 35px;
+            }
+            &__btn{
+                width: 70%;
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+                margin-top: 2rem;
+                font-size: 1.3rem;
+            }
+            &__txt{
+                padding-left: 3rem;
+                i{
+                    padding-right: 3rem;
+                }
+            }
+            &__number{
+                font-size: 15px;
+                width: 35px;
+                height: 25px;
+                padding-top: 9px;
+            }
+        }
+    }
+}

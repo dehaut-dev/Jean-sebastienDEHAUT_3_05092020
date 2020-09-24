@@ -1,0 +1,26 @@
+.localisation{
+    margin-top:3px;
+    padding-top: 4px;
+    display: flex;
+    justify-content: center;
+    background-color: #eaeaea;
+    
+    &__btn{
+        margin-right: 15px;
+    }
+    &__txt{
+        font-family: $txt;
+        font-size: 1rem; 
+    }
+}
+@media screen and (min-width: 768px){
+    .localisation{
+        &__btn{
+            margin-right: 20px;
+            font-size: 25px;
+        }
+        &__txt{
+            font-size: 25px;
+        }
+    }
+}
