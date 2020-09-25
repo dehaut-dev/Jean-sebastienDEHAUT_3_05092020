@@ -81,7 +81,7 @@ body {
   border: 0px;
   border-radius: 25px;
   margin-bottom: 3rem;
-  transition: opacity 250ms;
+  transition: opacity 250ms, box-shadow 250ms;
 }
 .explore__btn:hover {
   opacity: 0.9;
@@ -121,7 +121,7 @@ body {
   width: 90%;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  transition: opacity 0.5s, background-color 400ms;
+  transition: box-shadow 250ms, background-color 250ms;
 }
 .selection__btn:hover {
   background-color: #f2eafb;

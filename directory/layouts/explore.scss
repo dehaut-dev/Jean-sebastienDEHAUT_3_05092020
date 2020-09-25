@@ -21,7 +21,7 @@
         border: 0px;
         border-radius: 25px;
         margin-bottom: 3rem;
-        transition: opacity 250ms;
+        transition: opacity 250ms, box-shadow 250ms; 
         &:hover{
             opacity: 0.9;
             box-shadow: $opacity2;
