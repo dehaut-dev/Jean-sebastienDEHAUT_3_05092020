@@ -4,6 +4,10 @@
     padding-left: 1.5rem;
     padding-bottom: 3rem;
     font-family: $txt;
+    display: block;
+    &__sep{
+        display: block;
+    }
     &__title{
         font-size: 1.5rem;
         text-align: left;
@@ -59,13 +63,15 @@
         :hover{
             text-shadow: -1px 0 white, 0 1px white,1px 0 white, 0 -1px white ;
             color: $primaire;
+            cursor: pointer; 
+            cursor: hand;
         }
     }     
     &__new{
         font-size: 0.9rem;
         position: absolute;
         z-index: 2;
-        margin-left: 63%;
+        margin-left: 65%;
         font-weight: bold;
         background-color: $tertiaire;
         color: darken($color: $tertiaire, $amount: 40%);
@@ -101,6 +107,29 @@
                 font-size: 2rem;
                 margin-right: 1.4rem;
             }     
+            &__new{
+                font-size: 1.5rem;
+                margin-left: 80%;
+            }
+        }
+    }
+    @media screen and (min-width: 1024px){
+        .restaurant{
+            &__div{
+                max-width: 45%;
+                margin-right: 2rem; 
+            }
+            &__sep{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+            &__img{
+                border-radius: 20px 20px 0 0;
+                max-height: 15rem;
+                width: 100%;
+                object-fit: cover;
+            }
             &__new{
                 font-size: 1.5rem;
                 margin-left: 80%;
