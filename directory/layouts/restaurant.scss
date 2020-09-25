@@ -78,7 +78,13 @@
         padding: 0.3rem 1.55rem;
         border-radius: 3px;
     }
-    
+    @media screen and (max-width: 320px) {
+        .restaurant{
+            &__new{
+                margin-left: 60%;
+            }
+        }
+    }
     @media screen and (min-width: 768px){
         .restaurant{
             &__title{
@@ -109,7 +115,7 @@
             }     
             &__new{
                 font-size: 1.5rem;
-                margin-left: 80%;
+                margin-left: 75%;
             }
         }
     }
@@ -131,8 +137,14 @@
                 object-fit: cover;
             }
             &__new{
-                font-size: 1.5rem;
-                margin-left: 80%;
+                
+            font-size: 1.3rem;
+            margin-left: 33%;
+            font-weight: bold;
+            background-color: $tertiaire;
+            color: darken($color: $tertiaire, $amount: 40%);
+            padding: 0.3rem 1.55rem;
+            border-radius: 3px;
             }
         }
     }
