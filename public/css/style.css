@@ -32,6 +32,10 @@ body {
   margin: 0;
 }
 
+h1 {
+  display: none;
+}
+
 .localisation {
   margin-top: 3px;
   padding-top: 4px;
@@ -176,14 +180,14 @@ body {
 }
 @media screen and (min-width: 1024px) {
   .selection .selection {
-    margin-left: 15%;
+    margin-left: 25%;
   }
   .selection .selection__title {
-    padding-left: 15rem;
+    padding-left: 20%;
     font-size: 35px;
   }
   .selection .selection__btn {
-    width: 70%;
+    width: 50%;
     padding-top: 1rem;
     padding-bottom: 1rem;
     margin-top: 2rem;
@@ -308,6 +312,9 @@ body {
   }
 }
 @media screen and (min-width: 1024px) {
+  .restaurant .restaurant__title {
+    padding-bottom: 2rem;
+  }
   .restaurant .restaurant__div {
     max-width: 45%;
     margin-right: 2rem;
@@ -383,6 +390,10 @@ body {
     margin-right: 2%;
     width: 3px;
   }
+}
+
+.image__contenue {
+  max-width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

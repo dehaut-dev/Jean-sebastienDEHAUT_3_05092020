@@ -121,6 +121,9 @@
     }
     @media screen and (min-width: 1024px){
         .restaurant{
+            &__title{
+                padding-bottom: 2rem;
+            }
             &__div{
                 max-width: 45%;
                 margin-right: 2rem; 
