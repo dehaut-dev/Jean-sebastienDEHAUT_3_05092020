@@ -394,6 +394,53 @@ h1 {
 
 .image__contenue {
   max-width: 100%;
+  margin-bottom: -50px;
+  z-index: -1;
+  position: relative;
+}
+
+.gen {
+  z-index: 1;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  border-radius: 13px 13px 0 0;
+  background-color: #eaeaea;
+}
+.gen__title {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 1rem;
+  font-size: 1.1rem;
+}
+.gen__title h2 {
+  font-family: "Shrikhand", Arial, Helvetica, sans-serif;
+}
+.gen .menu {
+  padding-bottom: 1rem;
+}
+.gen .menu__cont {
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 0.2rem 1rem 0.2rem 1rem;
+  margin-bottom: 1rem;
+}
+.gen .menu__cont h3 {
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+.gen .menu__cont-txt {
+  display: flex;
+  justify-content: space-between;
+}
+.gen .menu__cont-txt p {
+  margin-bottom: 0.2rem;
+}
+.gen .menu__buttun {
+  padding: 1rem;
+  color: grey;
+  background-color: hotpink;
+  margin: 0;
 }
 
 /*# sourceMappingURL=style.css.map */

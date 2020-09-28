@@ -1,5 +1,57 @@
 .image{
     &__contenue{
         max-width: 100%;
+        margin-bottom: -50px;
+        z-index: -1;
+        position: relative;
+    }
+}
+
+.gen{
+    z-index: 1;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    border-radius: 13px 13px 0 0;
+    background-color: #eaeaea;
+    &__title{
+        display: flex;
+        justify-content: space-between;
+        margin-right: 1rem;
+        font-size: 1.1rem;
+        h2{
+            font-family: $title;
+        }
+    }
+
+    .menu{
+        padding-bottom: 1rem;
+        &__title{
+
+        }
+        &__cont{
+            background-color: #fff;
+            border-radius: 15px;
+            padding: 0.2rem 1rem 0.2rem 1rem;
+            margin-bottom: 1rem;
+            h3{
+                margin-top: 0.5rem;
+                margin-bottom: 0;
+                font-family: $txt;
+            }
+            &-txt{
+                display: flex;
+                justify-content: space-between;
+                p{
+                    margin-bottom: 0.2rem;
+                }
+                
+            }
+        }
+        &__buttun{
+            padding: 1rem;
+            color: grey;
+            background-color: hotpink;
+            margin: 0;
+        }
     }
 }
