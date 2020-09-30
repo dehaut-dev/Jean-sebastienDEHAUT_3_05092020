@@ -20,12 +20,12 @@
 }
 .header {
   text-align: center;
-  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.4);
 }
 .header .header__img {
   height: 45%;
   width: 45%;
-  padding: 1.1rem 0 1.1rem 0;
+  padding: 1.5rem 0 0.7rem 0;
 }
 
 body {
@@ -81,7 +81,7 @@ h1 {
   color: #FFF;
   font-size: 1rem;
   padding: 15px 20px 15px 20px;
-  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.4);
   border: 0px;
   border-radius: 25px;
   margin-bottom: 3rem;
@@ -116,7 +116,7 @@ h1 {
 .selection__btn {
   background-color: white;
   font-size: 1rem;
-  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.4);
   border: 0px;
   border-radius: 20px;
   display: flex;
@@ -217,7 +217,7 @@ h1 {
   text-align: left;
 }
 .restaurant__div {
-  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.4);
   border: 0px;
   border-radius: 25px;
   margin-bottom: 1.2rem;
@@ -392,9 +392,17 @@ h1 {
   }
 }
 
+.fa-arrow-left {
+  float: left;
+  font-size: 1.3rem;
+  padding-top: 1.7rem;
+  padding-left: 1.1rem;
+  opacity: 80%;
+}
+
 .image__contenue {
   max-width: 100%;
-  margin-bottom: -50px;
+  margin-bottom: -55px;
   z-index: -1;
   position: relative;
 }
@@ -403,28 +411,59 @@ h1 {
   z-index: 1;
   padding-right: 1rem;
   padding-left: 1rem;
-  border-radius: 13px 13px 0 0;
+  border-radius: 25px 25px 0 0;
   background-color: #eaeaea;
 }
 .gen__title {
   display: flex;
   justify-content: space-between;
   margin-right: 1rem;
-  font-size: 1.1rem;
+  padding-top: 1rem;
+  font-size: 1.2rem;
 }
 .gen__title h2 {
   font-family: "Shrikhand", Arial, Helvetica, sans-serif;
 }
+.gen__title p {
+  font-size: 1.5rem;
+}
 .gen .menu {
   padding-bottom: 1rem;
 }
+.gen .menu__title {
+  margin-top: 0;
+}
+.gen .menu__spam {
+  padding-bottom: 6px;
+  line-height: 3rem;
+  border-bottom: 3px solid #99E2D0;
+}
 .gen .menu__cont {
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.831);
   border-radius: 15px;
-  padding: 0.2rem 1rem 0.2rem 1rem;
+  padding: 0.2rem 0 0.2rem 1rem;
   margin-bottom: 1rem;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.4);
+  transition: opacity 250ms, box-shadow 250ms, visibility 250ms;
+}
+.gen .menu__cont:hover {
+  opacity: 0.9;
+  box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.6);
+}
+.gen .menu__cont:hover .valid {
+  visibility: visible;
+}
+.gen .menu__cont:hover .menu__cont-prix {
+  visibility: hidden;
+}
+.gen .menu__cont:hover h3 {
+  width: 75%;
 }
 .gen .menu__cont h3 {
+  width: 90%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
   margin-top: 0.5rem;
   margin-bottom: 0;
   font-family: "Roboto", Arial, Helvetica, sans-serif;
@@ -434,13 +473,54 @@ h1 {
   justify-content: space-between;
 }
 .gen .menu__cont-txt p {
-  margin-bottom: 0.2rem;
+  margin-bottom: 0.4rem;
+  margin-top: 0.4rem;
+}
+.gen .menu__cont-prix {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  padding-right: 1rem;
 }
 .gen .menu__buttun {
-  padding: 1rem;
-  color: grey;
-  background-color: hotpink;
-  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-bottom: 1.7rem;
+}
+.gen .menu__buttun__order {
+  text-align: center;
+  width: 45%;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  background: linear-gradient(#FF79DA, #9356DC);
+  color: #FFF;
+  font-size: 1rem;
+  padding: 15px 20px 15px 20px;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.4);
+  border: 0px;
+  border-radius: 25px;
+  margin-bottom: 3rem;
+  transition: opacity 250ms, box-shadow 250ms;
+}
+.gen .menu__buttun__order:hover {
+  opacity: 0.9;
+  box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.6);
+}
+
+.valid {
+  background-color: #99E2D0;
+  float: right;
+  margin-top: -65.5px;
+  width: 20%;
+  height: 4.3rem;
+  border-radius: 0 14px 14px 0;
+  visibility: hidden;
+  z-index: 1;
+}
+.valid i {
+  padding-left: 1.5rem;
+  padding-top: 1.5rem;
+  font-size: 1.5rem;
+  color: #FFF;
 }
 
 /*# sourceMappingURL=style.css.map */

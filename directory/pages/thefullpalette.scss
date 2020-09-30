@@ -1,7 +1,14 @@
+.fa-arrow-left{
+    float: left;
+    font-size: 1.3rem;
+    padding-top: 1.7rem;
+    padding-left: 1.1rem;
+    opacity: 80%;
+}
 .image{
     &__contenue{
         max-width: 100%;
-        margin-bottom: -50px;
+        margin-bottom: -55px;
         z-index: -1;
         position: relative;
     }
@@ -11,29 +18,58 @@
     z-index: 1;
     padding-right: 1rem;
     padding-left: 1rem;
-    border-radius: 13px 13px 0 0;
+    border-radius: 25px 25px 0 0;
     background-color: #eaeaea;
+    
     &__title{
         display: flex;
         justify-content: space-between;
         margin-right: 1rem;
-        font-size: 1.1rem;
+        padding-top: 1rem;
+        font-size: 1.2rem;
         h2{
             font-family: $title;
+        }
+        p{
+            font-size: 1.5rem;
         }
     }
 
     .menu{
         padding-bottom: 1rem;
         &__title{
-
+            margin-top: 0;
+        }
+        &__spam{
+            padding-bottom: 6px;
+            line-height: 3rem;
+            border-bottom: 3px solid $tertiaire;
         }
         &__cont{
-            background-color: #fff;
+            background-color: rgba(255, 255, 255, 0.831);
             border-radius: 15px;
-            padding: 0.2rem 1rem 0.2rem 1rem;
+            padding: 0.2rem 0 0.2rem 1rem;
             margin-bottom: 1rem;
+            box-shadow: $opacity;
+            transition: opacity 250ms, box-shadow 250ms, visibility 250ms; 
+            &:hover{
+                opacity: 0.9;
+                box-shadow: $opacity2;
+                .valid{
+                    visibility: visible;
+                }
+                .menu__cont-prix{
+                    visibility: hidden;
+                }
+                h3{
+                    width: 75%;
+                }
+            }
             h3{
+                width: 90%;
+                overflow:hidden;
+                text-overflow: ellipsis;
+                white-space:nowrap;
                 margin-top: 0.5rem;
                 margin-bottom: 0;
                 font-family: $txt;
@@ -42,16 +78,57 @@
                 display: flex;
                 justify-content: space-between;
                 p{
-                    margin-bottom: 0.2rem;
+                    margin-bottom: 0.4rem;
+                    margin-top: 0.4rem;
                 }
-                
+            }
+            &-prix{
+                font-family: $txt;
+                font-weight: 500;
+                padding-right: 1rem;
             }
         }
         &__buttun{
-            padding: 1rem;
-            color: grey;
-            background-color: hotpink;
-            margin: 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            padding-bottom: 1.7rem;
+            &__order{
+                text-align: center;
+                width: 45%;
+                font-family: $txt;
+                background: $btn__explore;
+                color: #FFF;
+                font-size: 1rem;
+                padding: 15px 20px 15px 20px;
+                box-shadow: $opacity;
+                border: 0px;
+                border-radius: 25px;
+                margin-bottom: 3rem;
+                transition: opacity 250ms, box-shadow 250ms; 
+                &:hover{
+                    opacity: 0.9;
+                    box-shadow: $opacity2;
+                }
+            }
+            
+            
         }
+    }
+}
+.valid{
+    background-color: $tertiaire;
+    float: right;
+    margin-top: -65.5px;
+    width: 20%;
+    height: 4.3rem;
+    border-radius: 0 14px 14px 0;
+    visibility: hidden;
+    z-index: 1;
+    i{
+        padding-left: 1.5rem;
+        padding-top: 1.5rem;
+        font-size: 1.5rem;
+        color: #FFF;
     }
 }
