@@ -10,7 +10,8 @@
         display: block;
     }
     &__title{
-        font-size: 1.5rem;
+        font-family: $title;
+        font-size: 2rem;
         text-align: left;
     }
     &__div{

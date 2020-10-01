@@ -1,14 +1,15 @@
 .selection{
     margin-top: 3rem ;
     margin-left: 1rem;
-    font-family: $title;
+    
     &__title{
-        font-size: 1.5rem;
+        font-size: 2rem;
         margin-left: -1px;
         text-align: left;
-        
+        font-family: $title;
     }
     &__btn{
+        font-family: $txt;
         background-color: white;
         font-size: 1rem;
         box-shadow: $opacity;
@@ -48,6 +49,7 @@
         }
     }
     &__number{
+        
         font-size: 13px;
         margin-left: -1rem;
         color: #ffffff;
