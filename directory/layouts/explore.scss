@@ -8,11 +8,13 @@
     }
     &__txt{
         font-family: $txt;
+        font-weight: 100;
         font-size: 1.1rem;
         padding-bottom: 1rem;
     }
     &__btn{
         font-family: $txt;
+        font-weight: 100;
         background: $btn__explore;
         color: #FFF;
         font-size: 1rem;

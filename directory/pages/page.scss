@@ -7,20 +7,20 @@
 }
 .image{
     &__contenue{
-        max-width: 100%;
-        margin-bottom: -55px;
+        width: 100%;
+        height: 18rem;
+        margin-bottom: -70px;
         z-index: -1;
         position: relative;
+        object-fit: fill;
     }
 }
 
 .gen{
-    z-index: 1;
     padding-right: 1rem;
     padding-left: 1rem;
     border-radius: 25px 25px 0 0;
     background-color: #eaeaea;
-    
     &__title{
         display: flex;
         justify-content: space-between;
@@ -46,23 +46,37 @@
             border-bottom: 3px solid $tertiaire;
         }
         &__cont{
+            height: 4rem;
             background-color: rgba(255, 255, 255, 0.831);
             border-radius: 15px;
             padding: 0.2rem 0 0.2rem 1rem;
             margin-bottom: 1rem;
             box-shadow: $opacity;
-            transition: opacity 250ms, box-shadow 250ms, visibility 250ms; 
+            transition: opacity 250ms, box-shadow 250ms, slide 250ms;
+            animation-name: slide;
+            @keyframes slide{
+                0% {
+                    width: 0%;
+                }
+                100% {
+                    width: 20%;
+                }
+            } 
             &:hover{
                 opacity: 0.9;
                 box-shadow: $opacity2;
                 .valid{
                     visibility: visible;
+                    width: 20%;
                 }
                 .menu__cont-prix{
                     visibility: hidden;
                 }
                 h3{
                     width: 75%;
+                }
+                p{
+                    max-width: 80%;
                 }
             }
             h3{
@@ -80,6 +94,14 @@
                 p{
                     margin-bottom: 0.4rem;
                     margin-top: 0.4rem;
+                    
+                }
+                :nth-child(1){
+                    overflow:hidden;
+                    text-overflow: ellipsis;
+                    white-space:nowrap;
+                    width: content;
+                    max-width: 80%;
                 }
             }
             &-prix{
@@ -120,15 +142,14 @@
     background-color: $tertiaire;
     float: right;
     margin-top: -65.5px;
-    width: 20%;
-    height: 4.3rem;
+    height: 4.5rem;
     border-radius: 0 14px 14px 0;
-    visibility: hidden;
-    z-index: 1;
+    visibility: visible;
     i{
-        padding-left: 1.5rem;
+        padding-left: 35%;
         padding-top: 1.5rem;
         font-size: 1.5rem;
         color: #FFF;
     }
 }
+   

@@ -4,6 +4,7 @@
     padding-left: 1.5rem;
     padding-bottom: 3rem;
     font-family: $txt;
+    font-weight: 100;
     display: block;
     &__sep{
         display: block;
@@ -46,6 +47,7 @@
             padding-bottom: 0.7rem;
             margin-left: 1rem;
             font-family: $txt;
+            font-weight: 100;
         }
     }
     &__fav{
@@ -57,9 +59,7 @@
         
         i{
             text-shadow: -1.5px 0 black, 0 1.2px black,1.5px 0 black, 0 -1.5px black;
-            
             transition: text-shadow 500ms, color 500ms;
-            
         }
         :hover{
             text-shadow: -1px 0 white, 0 1px white,1px 0 white, 0 -1px white ;
