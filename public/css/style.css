@@ -419,6 +419,18 @@ h1 {
 .gen__title p {
   font-size: 1.5rem;
 }
+.gen__title i {
+  padding-top: 2.5rem;
+  color: #eaeaea;
+  text-shadow: -1.5px 0 black, 0 1.2px black, 1.5px 0 black, 0 -1.5px black;
+  transition: text-shadow 500ms, color 500ms;
+}
+.gen__title i:hover {
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+  color: #9356DC;
+  cursor: pointer;
+  cursor: hand;
+}
 .gen .menu {
   padding-bottom: 1rem;
 }
@@ -438,16 +450,6 @@ h1 {
   padding: 0.2rem 0 0.2rem 1rem;
   margin-bottom: 1rem;
   box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
-  transition: opacity 250ms, box-shadow 250ms, slide 250ms;
-  animation-name: slide;
-}
-@keyframes slide {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 20%;
-  }
 }
 .gen .menu__cont:hover {
   opacity: 0.9;
@@ -497,6 +499,21 @@ h1 {
   font-weight: 500;
   padding-right: 1rem;
 }
+.gen .menu__cont .valid {
+  background-color: #99E2D0;
+  float: right;
+  margin-top: -65.5px;
+  height: 4.6rem;
+  width: 0;
+  border-radius: 0 14px 14px 0;
+  visibility: hidden;
+}
+.gen .menu__cont .valid i {
+  padding-left: 35%;
+  padding-top: 1.5rem;
+  font-size: 1.5rem;
+  color: #FFF;
+}
 .gen .menu__buttun {
   display: flex;
   flex-direction: row;
@@ -520,22 +537,6 @@ h1 {
 .gen .menu__buttun__order:hover {
   opacity: 0.9;
   box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.6);
-}
-
-.valid {
-  background-color: #99E2D0;
-  float: right;
-  margin-top: -65.5px;
-  height: 4.5rem;
-  width: 0;
-  border-radius: 0 14px 14px 0;
-  visibility: hidden;
-}
-.valid i {
-  padding-left: 35%;
-  padding-top: 1.5rem;
-  font-size: 1.5rem;
-  color: #FFF;
 }
 
 @media screen and (min-width: 768px) {

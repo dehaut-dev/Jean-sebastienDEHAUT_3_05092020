@@ -5,6 +5,7 @@
     padding-left: 1.1rem;
     opacity: 80%;
 }
+
 .image{
     &__contenue{
         width: 100%;
@@ -33,6 +34,18 @@
         p{
             font-size: 1.5rem;
         }
+        i{
+            padding-top: 2.5rem;
+            color: #eaeaea;
+            text-shadow: -1.5px 0 black, 0 1.2px black,1.5px 0 black, 0 -1.5px black;
+            transition: text-shadow 500ms, color 500ms;
+        }
+        i:hover{
+            text-shadow: -1px 0 white, 0 1px white,1px 0 white, 0 -1px white ;
+            color: $primaire;
+            cursor: pointer; 
+            cursor: hand;
+        }
     }
 
     .menu{
@@ -53,16 +66,6 @@
             padding: 0.2rem 0 0.2rem 1rem;
             margin-bottom: 1rem;
             box-shadow: $opacity;
-            transition: opacity 250ms, box-shadow 250ms, slide 250ms;
-            animation-name: slide;
-            @keyframes slide{
-                0% {
-                    width: 0%;
-                }
-                100% {
-                    width: 20%;
-                }
-            } 
             &:hover{
                 opacity: 0.9;
                 box-shadow: $opacity2;
@@ -112,6 +115,21 @@
                 font-weight: 500;
                 padding-right: 1rem;
             }
+            .valid{
+                background-color: $tertiaire;
+                float: right;
+                margin-top: -65.5px;
+                height: 4.6rem;
+                width: 0;
+                border-radius: 0 14px 14px 0;
+                visibility: hidden;
+                i{
+                    padding-left: 35%;
+                    padding-top: 1.5rem;
+                    font-size: 1.5rem;
+                    color: #FFF;
+                }
+            }
         }
         &__buttun{
             display: flex;
@@ -141,19 +159,5 @@
         }
     }
 }
-.valid{
-    background-color: $tertiaire;
-    float: right;
-    margin-top: -65.5px;
-    height: 4.5rem;
-    width: 0;
-    border-radius: 0 14px 14px 0;
-    visibility: hidden;
-    i{
-        padding-left: 35%;
-        padding-top: 1.5rem;
-        font-size: 1.5rem;
-        color: #FFF;
-    }
-}
+
    
