@@ -28,8 +28,13 @@
         &-font{
             margin-right: 5rem;
         }
+        a{
+            text-decoration: none;
+            color: #fff;
+        }
     }
     &__li:nth-child(4){
+        
         padding-bottom: 0rem;
     }
     @media screen and (min-width: 768px){
