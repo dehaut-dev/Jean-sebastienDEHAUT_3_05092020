@@ -4,10 +4,12 @@
     padding-top: 1.7rem;
     padding-left: 1.1rem;
     opacity: 80%;
+    color: black;
 }
 
 .image{
     &__contenue{
+
         width: 100%;
         height: 18rem;
         margin-bottom: -70px;
@@ -35,7 +37,7 @@
             font-size: 1.5rem;
         }
         i{
-            padding-top: 2.5rem;
+            padding-top: 2rem;
             color: #eaeaea;
             text-shadow: -1.5px 0 black, 0 1.2px black,1.5px 0 black, 0 -1.5px black;
             transition: text-shadow 500ms, color 500ms;
@@ -49,10 +51,14 @@
     }
 
     .menu{
-        padding-bottom: 1rem;
+        
+        padding-bottom: 0;
+
         &__title{
             margin-top: 0;
-            font-family: $title;
+            font-family: $txt;
+            font-weight: 100;
+            opacity: 0.8;
         }
         &__spam{
             padding-bottom: 6px;
@@ -60,29 +66,23 @@
             border-bottom: 3px solid $tertiaire;
         }
         &__cont{
-            height: 4rem;
+            overflow: hidden;
+            max-height: 4.1rem;
             background-color: rgba(255, 255, 255, 0.831);
             border-radius: 15px;
             padding: 0.2rem 0 0.2rem 1rem;
             margin-bottom: 1rem;
             box-shadow: $opacity;
+            transition: opacity 130ms, box-shadow 130ms;
+            
             &:hover{
                 opacity: 0.9;
                 box-shadow: $opacity2;
-                .valid{
-                    visibility: visible;
-                    width: 20%;
-                }
-                .menu__cont-prix{
-                    visibility: hidden;
-                }
-                h3{
-                    width: 75%;
-                }
-                p{
-                    max-width: 80%;
+                &:hover p:nth-child(1){
+                    max-width: 60%;
                 }
             }
+            
             h3{
                 width: 90%;
                 overflow:hidden;
@@ -91,44 +91,59 @@
                 margin-top: 0.5rem;
                 margin-bottom: 0;
                 font-family: $txt;
+                font-weight: 600;
+                font-size: 1.1rem;
             }
+            &:hover h3{
+                width: 60%;
+            }
+
             &-txt{
                 display: flex;
                 justify-content: space-between;
                 font-family: $txt;
                 font-weight: 100;
                 p{
+                    transition: max-width 130ms, transform 900ms;
                     margin-bottom: 0.4rem;
                     margin-top: 0.4rem;
-                    
-                }
-                :nth-child(1){
                     overflow:hidden;
                     text-overflow: ellipsis;
                     white-space:nowrap;
                     width: content;
                     max-width: 80%;
+                    
                 }
             }
             &-prix{
                 font-family: $txt;
-                font-weight: 500;
+                font-weight: 700;
                 padding-right: 1rem;
             }
+            &:hover .menu__cont-prix{
+                transform: translateX(-120%);
+            }
             .valid{
-                background-color: $tertiaire;
+                transition: transform 1s;
+                display: flex;
                 float: right;
-                margin-top: -65.5px;
-                height: 4.6rem;
-                width: 0;
-                border-radius: 0 14px 14px 0;
+                margin-top: -4rem;
                 visibility: hidden;
                 i{
-                    padding-left: 35%;
+                    transform: translateX(100%);
+                    height: 3.1rem;
+                    width: 4.5rem;
+                    border-radius: 0 14px 14px 0;
+                    background-color: $tertiaire;
+                    padding-left: 30%;
                     padding-top: 1.5rem;
                     font-size: 1.5rem;
-                    color: #FFF;
+                    color: #eaeaea;
                 }
+            }
+            &:hover .valid{
+                visibility: visible;
+                transform: translateX(-100%);
             }
         }
         &__buttun{
@@ -136,9 +151,10 @@
             flex-direction: row;
             justify-content: center;
             padding-bottom: 1.7rem;
+            transition: opacity 130ms, box-shadow 130ms;
             &__order{
-                text-align: center;
                 width: 45%;
+                text-align: center;
                 font-family: $txt;
                 background: $btn__explore;
                 color: #FFF;

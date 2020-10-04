@@ -21,7 +21,10 @@
         width: 90%;
         padding-top: 0.5rem;
         padding-bottom: 0.5rem;
-        transition: box-shadow 250ms, background-color 250ms; 
+        transition: box-shadow 150ms, background-color 150ms; 
+        i{
+            transition: color 150ms, opacity 150ms;
+        }
         &:hover{
             background-color: lighten($color: $primaire, $amount: 35%);
             box-shadow: $opacity2;
