@@ -45,8 +45,7 @@
         i:hover{
             text-shadow: -1px 0 white, 0 1px white,1px 0 white, 0 -1px white ;
             color: $primaire;
-            cursor: pointer; 
-            cursor: hand;
+            cursor: pointer;
         }
     }
 
@@ -54,7 +53,6 @@
         transition: translate ;
         padding-bottom: 0;
         animation: start 1s;
-        	
         &__title{
             margin-top: 0;
             font-family: $txt;
@@ -120,7 +118,6 @@
                     overflow:hidden;
                     text-overflow: ellipsis;
                     white-space:nowrap;
-                    width: content;
                     max-width: 80%;
                     font-size: 1rem;
                 }
