@@ -1,12 +1,11 @@
 
 .custom-loading-spinner {
     position: fixed;
-    
     width: 100%;
     height: 100%;
     visibility: hidden;
     overflow: hidden;
-	animation: 5s hide;
+	animation: 3s hide;
 	@keyframes hide {
 		0%,95% {visibility: visible;}
 		100% {visibility: hidden;}
