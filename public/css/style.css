@@ -496,7 +496,7 @@ h1 {
 }
 .gen .menu {
   padding-bottom: 0;
-  max-height: content;
+  max-height: fit-content;
   overflow: hidden;
 }
 .gen .menu__title {
