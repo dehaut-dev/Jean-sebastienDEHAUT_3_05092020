@@ -21,7 +21,7 @@
         margin-bottom: 1.2rem;
         max-width: 95%;
         margin-left: 0;
-        transition: opacity 300ms, visibility 0s 0.3s, box-shadow 0.3s;
+        transition: opacity 200ms, box-shadow 200ms;
         &:hover{
             opacity: 0.9;
             box-shadow: $opacity2;
@@ -57,7 +57,6 @@
         margin-right: 1rem;
         margin-top: -3rem;
         color: white;
-        
         i{
             text-shadow: -1.5px 0 black, 0 1.2px black,1.5px 0 black, 0 -1.5px black;
             transition: text-shadow 500ms, color 500ms;
@@ -69,7 +68,6 @@
         }
     }     
     &__new{
-        
         font-size: 0.9rem;
         position: absolute;
         z-index: 1;
