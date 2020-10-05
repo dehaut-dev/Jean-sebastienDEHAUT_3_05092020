@@ -512,7 +512,7 @@ h1 {
 .gen .menu__cont {
   overflow: hidden;
   animation: start 3s;
-  max-height: 4.1rem;
+  height: 4.1rem;
   background-color: rgba(255, 255, 255, 0.831);
   border-radius: 15px;
   padding: 0.2rem 0 0.2rem 1rem;
@@ -581,11 +581,10 @@ h1 {
   transition: transform 1s;
   display: flex;
   float: right;
-  margin-top: -4rem;
+  margin-top: -3.9rem;
   visibility: hidden;
   height: 4.6rem;
-  width: 6rem;
-  border-radius: 0 14px 14px 0;
+  width: 6.5rem;
   background-color: #99E2D0;
   transform: translateX(100%);
 }
