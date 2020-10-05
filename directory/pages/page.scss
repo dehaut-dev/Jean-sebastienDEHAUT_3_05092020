@@ -42,7 +42,7 @@
             line-height: 3rem;
             border-bottom: 3px solid $tertiaire;
         }
-        max-height: content;
+        max-height: fit-content;
         overflow: hidden;
         &__cont{
             overflow:hidden;
