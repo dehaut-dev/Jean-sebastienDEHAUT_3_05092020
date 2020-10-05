@@ -69,9 +69,10 @@
         }
     }     
     &__new{
+        
         font-size: 0.9rem;
         position: absolute;
-        z-index: 2;
+        z-index: 1;
         margin-left: 65%;
         font-weight: bold;
         background-color: $tertiaire;

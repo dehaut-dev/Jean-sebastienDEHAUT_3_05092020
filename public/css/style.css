@@ -12,6 +12,24 @@ h2 {
   padding: 1.5rem 0 0.7rem 0;
 }
 
+.fa-arrow-left {
+  float: left;
+  font-size: 1.3rem;
+  padding-top: 1.7rem;
+  padding-left: 1.1rem;
+  opacity: 80%;
+  color: black;
+}
+
+.image__contenue {
+  width: 100%;
+  height: 18rem;
+  margin-bottom: -70px;
+  z-index: -1;
+  position: relative;
+  object-fit: fill;
+}
+
 body {
   margin: 0;
 }
@@ -28,6 +46,7 @@ h1 {
   background-color: #eaeaea;
 }
 .localisation__btn {
+  z-index: 1;
   margin-right: 15px;
   opacity: 0.8;
 }
@@ -264,7 +283,7 @@ h1 {
 .restaurant__new {
   font-size: 0.9rem;
   position: absolute;
-  z-index: 2;
+  z-index: 1;
   margin-left: 65%;
   font-weight: bold;
   background-color: #99E2D0;
@@ -345,6 +364,7 @@ h1 {
   font-weight: 100;
 }
 .footer__img {
+  z-index: 1;
   width: 100px;
   height: auto;
   margin: 1.5rem 0 0 2rem;
@@ -394,12 +414,13 @@ h1 {
 }
 
 .custom-loading-spinner {
+  z-index: 2;
   position: fixed;
   width: 100%;
   height: 100%;
   visibility: hidden;
   overflow: hidden;
-  animation: 5s hide;
+  animation: 3s hide;
 }
 @keyframes hide {
   0%, 95% {
@@ -416,7 +437,7 @@ h1 {
   width: 100%;
   height: 100%;
   max-height: 100%;
-  z-index: 1;
+  z-index: 3;
   overflow: visible;
   background: #0b0b0b;
   opacity: 0.7;
@@ -435,7 +456,7 @@ h1 {
   border-radius: 50%;
   width: 50px;
   height: 50px;
-  animation: custom-loading 1s infinite;
+  animation: custom-loading 1s infinite ease-in-out;
 }
 @keyframes custom-loading {
   0% {
@@ -444,24 +465,6 @@ h1 {
   100% {
     transform: rotate(360deg);
   }
-}
-
-.fa-arrow-left {
-  float: left;
-  font-size: 1.3rem;
-  padding-top: 1.7rem;
-  padding-left: 1.1rem;
-  opacity: 80%;
-  color: black;
-}
-
-.image__contenue {
-  width: 100%;
-  height: 18rem;
-  margin-bottom: -70px;
-  z-index: -1;
-  position: relative;
-  object-fit: fill;
 }
 
 .gen {
@@ -493,12 +496,11 @@ h1 {
   text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
   color: #9356DC;
   cursor: pointer;
-  cursor: hand;
 }
 .gen .menu {
-  transition: translate;
   padding-bottom: 0;
-  animation: start 1s;
+  max-height: content;
+  overflow: hidden;
 }
 .gen .menu__title {
   margin-top: 0;
@@ -512,8 +514,8 @@ h1 {
   border-bottom: 3px solid #99E2D0;
 }
 .gen .menu__cont {
-  transition: start 3s ease-in;
   overflow: hidden;
+  animation: start 3s;
   max-height: 4.1rem;
   background-color: rgba(255, 255, 255, 0.831);
   border-radius: 15px;
@@ -523,13 +525,15 @@ h1 {
   transition: opacity 130ms, box-shadow 130ms;
 }
 @keyframes start {
-  0%, 95% {
+  0% {
     opacity: 0;
-    transform: translateY(-120%);
+    transform: translateY(-300%);
+    transform-origin: bottom;
   }
   100% {
     opacity: 1;
     transform: translateY(0%);
+    transform-origin: bottom;
   }
 }
 .gen .menu__cont:hover {
@@ -566,7 +570,6 @@ h1 {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  width: content;
   max-width: 80%;
   font-size: 1rem;
 }
