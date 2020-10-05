@@ -572,6 +572,7 @@ h1 {
 .gen .menu__cont-prix {
   font-family: "Roboto2", sans-serif;
   padding-right: 1rem;
+  font-weight: 600;
 }
 .gen .menu__cont:hover .menu__cont-prix {
   transform: translateX(-120%);

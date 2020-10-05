@@ -106,6 +106,7 @@
             &-prix{
                 font-family: $txt;
                 padding-right: 1rem;
+                font-weight: 600;
             }
             &:hover .menu__cont-prix{
                 transform: translateX(-120%);
