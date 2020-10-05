@@ -2,19 +2,18 @@
     text-align: center;
     background-color: #f6f6f6;
     &__title{
-        font-family: $title;
+        font-family: $txt;
         margin: 0;
         padding: 2rem;
     }
     &__txt{
-        font-family: $txt;
+        font-family: $txt2;
         font-weight: 100;
         font-size: 1.1rem;
         padding-bottom: 1rem;
     }
     &__btn{
-        font-family: $txt;
-        font-weight: 100;
+        font-family: $txt2;
         background: $btn__explore;
         color: #FFF;
         font-size: 1rem;

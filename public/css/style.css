@@ -1,5 +1,5 @@
 h2 {
-  font-family: "Shrikhand", sans-serif;
+  font-family: "Roboto2", sans-serif;
 }
 
 .header {
@@ -52,7 +52,6 @@ h1 {
 }
 .localisation__txt {
   font-family: "Roboto", sans-serif;
-  font-weight: 100;
   font-size: 1rem;
 }
 
@@ -70,7 +69,7 @@ h1 {
   background-color: #f6f6f6;
 }
 .explore__title {
-  font-family: "Shrikhand", sans-serif;
+  font-family: "Roboto2", sans-serif;
   margin: 0;
   padding: 2rem;
 }
@@ -82,7 +81,6 @@ h1 {
 }
 .explore__btn {
   font-family: "Roboto", sans-serif;
-  font-weight: 100;
   background: linear-gradient(#FF79DA, #9356DC);
   color: #FFF;
   font-size: 1rem;
@@ -114,13 +112,13 @@ h1 {
   margin-left: 1rem;
 }
 .selection__title {
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-left: -1px;
   text-align: left;
-  font-family: "Shrikhand", sans-serif;
+  font-family: "Roboto2", sans-serif;
 }
 .selection__btn {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto2", sans-serif;
   background-color: white;
   font-size: 1rem;
   box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
@@ -149,8 +147,7 @@ h1 {
   margin-bottom: 4.1rem;
 }
 .selection__txt {
-  font-family: "Roboto", sans-serif;
-  font-weight: 100;
+  font-family: "Roboto2", sans-serif;
   padding-left: 1.5rem;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -218,7 +215,7 @@ h1 {
   background-color: #f6f6f6;
   padding-left: 1.5rem;
   padding-bottom: 3rem;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto2", sans-serif;
   font-weight: 100;
   display: block;
 }
@@ -226,8 +223,8 @@ h1 {
   display: block;
 }
 .restaurant__title {
-  font-family: "Shrikhand", sans-serif;
-  font-size: 2rem;
+  font-family: "Roboto2", sans-serif;
+  font-size: 1.5rem;
   text-align: left;
 }
 .restaurant__div {
@@ -257,11 +254,11 @@ h1 {
   font-weight: bold;
 }
 .restaurant__txt-txt {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   margin: 0;
   padding-bottom: 0.7rem;
   margin-left: 1rem;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto2", sans-serif;
   font-weight: 100;
 }
 .restaurant__fav {
@@ -360,7 +357,7 @@ h1 {
   background-color: #353535;
   padding-bottom: 1rem;
   padding-left: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto2", sans-serif;
   font-weight: 100;
 }
 .footer__img {
@@ -505,8 +502,7 @@ h1 {
 .gen .menu__title {
   margin-top: 0;
   font-family: "Roboto", sans-serif;
-  font-weight: 100;
-  opacity: 0.8;
+  opacity: 0.7;
 }
 .gen .menu__spam {
   padding-bottom: 6px;
@@ -550,7 +546,7 @@ h1 {
   white-space: nowrap;
   margin-top: 0.5rem;
   margin-bottom: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto2", sans-serif;
   font-weight: 600;
   font-size: 1.1rem;
 }
@@ -560,7 +556,7 @@ h1 {
 .gen .menu__cont-txt {
   display: flex;
   justify-content: space-between;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto2", sans-serif;
   font-weight: 100;
 }
 .gen .menu__cont-txt p {
@@ -571,11 +567,10 @@ h1 {
   text-overflow: ellipsis;
   white-space: nowrap;
   max-width: 80%;
-  font-size: 1rem;
+  font-size: 0.95rem;
 }
 .gen .menu__cont-prix {
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
+  font-family: "Roboto2", sans-serif;
   padding-right: 1rem;
 }
 .gen .menu__cont:hover .menu__cont-prix {
@@ -626,7 +621,7 @@ h1 {
 .gen .menu__buttun__order {
   width: 45%;
   text-align: center;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto2", sans-serif;
   background: linear-gradient(#FF79DA, #9356DC);
   color: #FFF;
   font-size: 1rem;

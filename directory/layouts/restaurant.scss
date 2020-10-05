@@ -10,8 +10,8 @@
         display: block;
     }
     &__title{
-        font-family: $title;
-        font-size: 2rem;
+        font-family: $txt;
+        font-size: 1.5rem;
         text-align: left;
     }
     &__div{
@@ -43,7 +43,7 @@
             
         }
         &-txt{
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             margin: 0;
             padding-bottom: 0.7rem;
             margin-left: 1rem;

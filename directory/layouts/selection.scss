@@ -3,10 +3,10 @@
     margin-left: 1rem;
     
     &__title{
-        font-size: 2rem;
+        font-size: 1.5rem;
         margin-left: -1px;
         text-align: left;
-        font-family: $title;
+        font-family: $txt;
     }
     &__btn{
         font-family: $txt;
@@ -40,7 +40,6 @@
 
     &__txt{
         font-family: $txt;
-        font-weight: 100;
         padding-left: 1.5rem;
         overflow:hidden;
         text-overflow: ellipsis;
