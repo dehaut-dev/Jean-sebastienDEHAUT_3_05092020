@@ -15,19 +15,22 @@
         p{
             font-size: 1.5rem;
         }
-        i{
-            padding-top: 2rem;
-            color: #eaeaea;
-            text-shadow: -1.5px 0 black, 0 1.2px black,1.5px 0 black, 0 -1.5px black;
-            transition: text-shadow 500ms, color 500ms;
-        }
-        i:hover{
-            text-shadow: -1px 0 white, 0 1px white,1px 0 white, 0 -1px white ;
-            cursor: pointer;
-            background-color: $btn__explore;
-            -webkit-background-clip: text;
-            background-clip: text;
-        }
+        .img{
+            width: 25px;
+            height: 25px;
+            padding-top: 3.8rem;
+            background-image: url(/public/images/logo/heart-1.png);
+            background-size: 25px 25px;
+            background-position:center center;
+            background-repeat: no-repeat;
+            object-fit: fill;
+            
+            &:hover{
+                transition: background-image 500ms;
+                animation: heart 500ms ease-in-out;
+                background-image: url(/public/images/logo/heart-2.png);
+            }
+        }   
     }
 
     .menu{

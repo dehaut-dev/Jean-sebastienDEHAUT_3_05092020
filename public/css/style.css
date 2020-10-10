@@ -278,6 +278,20 @@ h1 {
   color: #9356DC;
   cursor: pointer;
 }
+.restaurant .img {
+  width: 30px;
+  height: 30px;
+  background-image: url(/public/images/logo/heart-1.png);
+  background-size: 30px 30px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  object-fit: fill;
+}
+.restaurant .img:hover {
+  transition: background-image 500ms;
+  animation: heart 500ms ease-in-out;
+  background-image: url(/public/images/logo/heart-2.png);
+}
 .restaurant__new {
   font-size: 0.9rem;
   position: absolute;
@@ -484,18 +498,20 @@ h1 {
 .gen__title p {
   font-size: 1.5rem;
 }
-.gen__title i {
-  padding-top: 2rem;
-  color: #eaeaea;
-  text-shadow: -1.5px 0 black, 0 1.2px black, 1.5px 0 black, 0 -1.5px black;
-  transition: text-shadow 500ms, color 500ms;
+.gen__title .img {
+  width: 25px;
+  height: 25px;
+  padding-top: 3.8rem;
+  background-image: url(/public/images/logo/heart-1.png);
+  background-size: 25px 25px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  object-fit: fill;
 }
-.gen__title i:hover {
-  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
-  cursor: pointer;
-  background-color: linear-gradient(#FF79DA, #9356DC);
-  -webkit-background-clip: text;
-  background-clip: text;
+.gen__title .img:hover {
+  transition: background-image 500ms;
+  animation: heart 500ms ease-in-out;
+  background-image: url(/public/images/logo/heart-2.png);
 }
 .gen .menu {
   padding-bottom: 0;
@@ -685,18 +701,24 @@ h1 {
   0% {
     opacity: 0;
     transform: translateY(300%);
-    transform-origin: bottom;
   }
-  30% {
-    opacity: 0;
-  }
-  70% {
-    opacity: 0.4;
+  50% {
+    opacity: 0.3;
   }
   100% {
     opacity: 1;
     transform: translateY(0%);
-    transform-origin: bottom;
+  }
+}
+@keyframes heart {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 .gen .entrée .menu__cont {

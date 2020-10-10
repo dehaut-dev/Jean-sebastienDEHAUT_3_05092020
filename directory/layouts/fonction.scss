@@ -2,17 +2,23 @@
     0% {
        opacity: 0;
        transform: translateY(300%);
-       transform-origin: bottom;
    }
-   30%{
-       opacity: 0;
-   }
-   70% {
-       opacity: 0.4;
+   50% {
+       opacity: 0.3;
    }
    100% {
        opacity: 1;
        transform: translateY(0%);
-       transform-origin: bottom;
+   }
+}
+@keyframes heart {
+    0% {
+       opacity: 1;
+   }
+   50% {
+       opacity: 0;
+   }
+   100% {
+       opacity: 1;
    }
 }
