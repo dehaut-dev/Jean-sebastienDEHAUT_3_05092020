@@ -1,5 +1,3 @@
-
-
 .gen{
     padding-right: 1rem;
     padding-left: 1rem;
@@ -25,13 +23,17 @@
         }
         i:hover{
             text-shadow: -1px 0 white, 0 1px white,1px 0 white, 0 -1px white ;
-            color: $primaire;
             cursor: pointer;
+            background-color: $btn__explore;
+            -webkit-background-clip: text;
+            background-clip: text;
         }
     }
 
     .menu{
         padding-bottom: 0;
+        max-height: fit-content;
+        overflow: hidden;
         &__title{
             margin-top: 0;
             font-family: $txt2;
@@ -42,23 +44,8 @@
             line-height: 3rem;
             border-bottom: 3px solid $tertiaire;
         }
-        max-height: fit-content;
-        overflow: hidden;
         &__cont{
-            overflow:hidden;
-                animation: start 3s;
-                @keyframes start {
-                 0% {
-                    opacity: 0;
-                    transform: translateY(-300%);
-                    transform-origin: bottom;
-                }
-                100% {
-                    opacity: 1;
-                    transform: translateY(0%);
-                    transform-origin: bottom;
-                }
-            }
+            overflow: hidden;
             height: 4.1rem;
             background-color: rgba(255, 255, 255, 0.831);
             border-radius: 15px;
@@ -169,6 +156,31 @@
             }
             
             
+        }
+    }
+    .entrée{
+        .menu{
+            &__cont{
+                animation: start 2s;
+            }
+        }
+    }
+    .plat{
+        .menu{
+            &__cont{
+                animation: start 2s;
+                animation-delay: 2s;
+                animation-fill-mode: backwards;
+            }
+        }
+    }
+    .dessert{
+        .menu{
+            &__cont{
+                animation: start 2s;
+                animation-delay: 4s;
+                animation-fill-mode: backwards;
+            }
         }
     }
 }
