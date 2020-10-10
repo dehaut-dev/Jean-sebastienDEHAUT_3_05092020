@@ -158,31 +158,6 @@
             
         }
     }
-    .entrée{
-        .menu{
-            &__cont{
-                animation: start 1.5s;
-            }
-        }
-    }
-    .plat{
-        .menu{
-            &__cont{
-                animation: start 2s;
-                animation-delay: 1s;
-                animation-fill-mode: backwards;
-            }
-        }
-    }
-    .dessert{
-        .menu{
-            &__cont{
-                animation: start 2s;
-                animation-delay: 2s;
-                animation-fill-mode: backwards;
-            }
-        }
-    }
 }
 
    
