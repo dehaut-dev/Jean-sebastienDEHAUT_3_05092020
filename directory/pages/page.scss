@@ -161,7 +161,7 @@
     .entrée{
         .menu{
             &__cont{
-                animation: start 2s;
+                animation: start 1.5s;
             }
         }
     }
@@ -169,7 +169,7 @@
         .menu{
             &__cont{
                 animation: start 2s;
-                animation-delay: 2s;
+                animation-delay: 1s;
                 animation-fill-mode: backwards;
             }
         }
@@ -178,7 +178,7 @@
         .menu{
             &__cont{
                 animation: start 2s;
-                animation-delay: 4s;
+                animation-delay: 2s;
                 animation-fill-mode: backwards;
             }
         }

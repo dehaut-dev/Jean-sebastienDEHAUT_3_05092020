@@ -627,16 +627,16 @@ h1 {
   box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.6);
 }
 .gen .entrée .menu__cont {
-  animation: start 2s;
+  animation: start 1.5s;
 }
 .gen .plat .menu__cont {
   animation: start 2s;
-  animation-delay: 2s;
+  animation-delay: 1s;
   animation-fill-mode: backwards;
 }
 .gen .dessert .menu__cont {
   animation: start 2s;
-  animation-delay: 4s;
+  animation-delay: 2s;
   animation-fill-mode: backwards;
 }
 
