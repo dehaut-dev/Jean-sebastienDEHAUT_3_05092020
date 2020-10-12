@@ -502,16 +502,17 @@ h1 {
   width: 25px;
   height: 25px;
   padding-top: 3.8rem;
-  background-image: url(./public/images/logo/heart-1.png);
+  background-image: url(/public/images/logo/heart-1.png);
   background-size: 25px 25px;
   background-position: center center;
   background-repeat: no-repeat;
   object-fit: fill;
+  cursor: pointer;
 }
 .gen__title .img:hover {
   transition: background-image 500ms;
   animation: heart 500ms ease-in-out;
-  background-image: url(./public/images/logo/heart-2.png);
+  background-image: url(/public/images/logo/heart-2.png);
 }
 .gen .menu {
   padding-bottom: 0;
