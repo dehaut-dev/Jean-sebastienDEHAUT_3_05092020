@@ -25,9 +25,8 @@
             background-repeat: no-repeat;
             object-fit: fill;
             cursor: pointer;
-            transition: all 850ms linear 0s;
             &:hover{
-                transition: all 850ms linear 0s;
+                transition: background-image 850ms linear 0s, animation 850ms linear;
                 animation: heart 850ms linear;
                 background-image: url(../public/images/logo/heart-2.png);
             }
@@ -81,7 +80,7 @@
             &-txt{
                 display: flex;
                 justify-content: space-between;
-                font-family: $txt;
+                font-family: $txt2;
                 font-weight: 100;
                 p{
                     transition: max-width 500ms ease-in-out, transform 500ms ease-in-out;
@@ -106,7 +105,7 @@
                 transition: transform 1s;
                 display: flex;
                 float: right;
-                margin-top: -3.9rem;
+                margin-top: -4rem;
                 visibility: hidden;
                 height: 4.6rem;
                 width: 6.5rem;
