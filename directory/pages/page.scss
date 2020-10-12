@@ -24,10 +24,11 @@
             background-position:center center;
             background-repeat: no-repeat;
             object-fit: fill;
-            cursor: pointer; 
+            cursor: pointer;
+            transition: all 850ms linear 0s;
             &:hover{
-                transition: background-image 500ms;
-                animation: heart 500ms ease-in-out;
+                transition: all 850ms linear 0s;
+                animation: heart 850ms linear;
                 background-image: url(../public/images/logo/heart-2.png);
             }
         }   
@@ -36,11 +37,11 @@
     .menu{
         padding-bottom: 0;
         max-height: fit-content;
-        overflow: hidden;
         &__title{
             margin-top: 0;
             font-family: $txt2;
             opacity: 0.7;
+            font-size: 1rem;
         }
         &__spam{
             padding-bottom: 6px;
@@ -54,8 +55,7 @@
             border-radius: 15px;
             padding: 0.2rem 0 0.2rem 1rem;
             margin-bottom: 1rem;
-            box-shadow: $opacity;
-            transition: opacity 130ms, box-shadow 130ms;
+            box-shadow: $opacity2;
             &:hover{
                 opacity: 0.9;
                 box-shadow: $opacity2;
@@ -73,6 +73,7 @@
                 font-family: $txt;
                 font-weight: 600;
                 font-size: 1.1rem;
+                transition: width 530ms, transform 900ms;
             }
             &:hover h3{
                 width: 60%;
@@ -83,7 +84,7 @@
                 font-family: $txt;
                 font-weight: 100;
                 p{
-                    transition: max-width 130ms, transform 900ms;
+                    transition: max-width 500ms ease-in-out, transform 500ms ease-in-out;
                     margin-bottom: 0.4rem;
                     margin-top: 0.4rem;
                     overflow:hidden;
