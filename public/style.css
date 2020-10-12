@@ -281,7 +281,7 @@ h1 {
 .restaurant .img {
   width: 30px;
   height: 30px;
-  background-image: url(/public/images/logo/heart-1.png);
+  background-image: url(../public/images/logo/heart-1.png);
   background-size: 30px 30px;
   background-position: center center;
   background-repeat: no-repeat;
@@ -290,7 +290,7 @@ h1 {
 .restaurant .img:hover {
   transition: background-image 500ms;
   animation: heart 500ms ease-in-out;
-  background-image: url(/public/images/logo/heart-2.png);
+  background-image: url(../public/images/logo/heart-2.png);
 }
 .restaurant__new {
   font-size: 0.9rem;
