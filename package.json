@@ -4,7 +4,8 @@
   "description": "projet P3",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "sass": "sass --watch ./directory/main.scss:./public/style.css",
+    "prefix": "postcss ./public/style.css --use autoprefixer -d ./public/prefixed/"
   },
   "repository": {
     "type": "git",
@@ -12,6 +13,7 @@
   },
   "author": "",
   "license": "ISC",
+  "browserslist": "last 4 versions",
   "bugs": {
     "url": "https://github.com/dehaut-dev/Jean-sebastienDEHAUT_3_04092020/issues"
   },
