@@ -535,9 +535,10 @@ h1 {
   border-radius: 15px;
   padding: 0.2rem 0 0.2rem 1rem;
   margin-bottom: 1rem;
-  box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.6);
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
 }
 .gen .menu__cont:hover {
+  transition: all 200ms;
   opacity: 0.9;
   box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.6);
 }
@@ -566,7 +567,7 @@ h1 {
   font-weight: 100;
 }
 .gen .menu__cont-txt p {
-  transition: max-width 500ms ease-in-out, transform 500ms ease-in-out;
+  transition: max-width 950ms, transform 950ms;
   margin-bottom: 0.4rem;
   margin-top: 0.4rem;
   overflow: hidden;

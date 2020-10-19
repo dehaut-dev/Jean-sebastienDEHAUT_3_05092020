@@ -54,8 +54,9 @@
             border-radius: 15px;
             padding: 0.2rem 0 0.2rem 1rem;
             margin-bottom: 1rem;
-            box-shadow: $opacity2;
+            box-shadow: $opacity;
             &:hover{
+                transition: all 200ms;
                 opacity: 0.9;
                 box-shadow: $opacity2;
                 &:hover p:nth-child(1){
@@ -83,7 +84,7 @@
                 font-family: $txt2;
                 font-weight: 100;
                 p{
-                    transition: max-width 500ms ease-in-out, transform 500ms ease-in-out;
+                    transition: max-width 950ms, transform 950ms;
                     margin-bottom: 0.4rem;
                     margin-top: 0.4rem;
                     overflow:hidden;
