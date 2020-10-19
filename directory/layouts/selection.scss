@@ -26,7 +26,7 @@
             transition: color 150ms, opacity 150ms;
         }
         &:hover{
-            background-color: lighten($color: $primaire, $amount: 35%);
+            background-color: lighten($color: $primaire, $amount: 30%);
             box-shadow: $opacity2;
             i{
                 color: $primaire;
@@ -99,6 +99,39 @@
                 i{
                     padding-right: 3rem;
                 }
+            }
+        }
+    }
+    @media screen and (min-width: 2560px){
+        .selection{
+            margin-left: 25%;
+            &__title{
+                padding-left: 20%;
+                font-size: 55px;
+            }
+            &__btn{
+                width: 50%;
+                padding-top: 2rem;
+                padding-bottom: 2rem;
+                margin-top: 2rem;
+                font-size: 3rem;
+            }
+            &__txt{
+                padding-left: 3rem;
+                i{
+                    font-size: 3rem;
+                    padding-right: 3rem;
+                }
+            }
+            &__number{
+        
+                font-size: 30px;
+                margin-left: -1rem;
+                color: #ffffff;
+                background-color: $primaire;
+                border-radius: 50%;
+                padding: 30px 30px;
+                line-height: 4px;
             }
         }
     }

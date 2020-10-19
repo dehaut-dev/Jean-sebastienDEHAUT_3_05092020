@@ -78,6 +78,7 @@
             transition: background-image 500ms;
             animation: heart 500ms ease-in-out;
             background-image: url(../public/images/logo/heart-2.png);
+            cursor: pointer;
         }
     }     
     &__new{
@@ -164,4 +165,34 @@
             }
         }
     }
+    @media screen and (min-width: 2560px){
+        .restaurant{
+            &__title{
+                font-size: 4rem;
+            }
+            &__div{
+                max-width: 45%;
+                margin-right: 2rem; 
+            }
+            &__sep{
+            }
+            &__img{
+                max-height: 40rem;
+            }
+            &__new{
+            font-size: 3rem;
+            margin-left: 35%;
+            }
+            &__txt{
+                &-title{
+                    font-size: 3rem;
+                }
+                &-txt{
+                    font-size: 3rem;
+                }
+            }
+               
+        }
+    }
+    
 }    

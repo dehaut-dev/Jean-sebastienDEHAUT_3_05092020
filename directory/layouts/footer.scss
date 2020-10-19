@@ -58,5 +58,26 @@
                 }
             }
         }
-    }  
+    }    
+    @media screen and (min-width: 2560px){
+        .footer{
+            &__img{
+                width: 400px;
+            }
+            &__li{
+                font-size: 2.5rem;
+            }
+            &__ul{
+                
+                i{
+                    font-size: 2.5rem;
+                }
+                .fas{
+                    font-size: 2rem;
+                    margin-right: 2%;
+                    width: 3px;
+                }
+            }
+        }
+    }    
 }

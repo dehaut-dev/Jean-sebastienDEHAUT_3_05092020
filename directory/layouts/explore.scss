@@ -41,4 +41,17 @@
             }
         }
     }
+    @media screen and (min-width: 2560px){
+        .explore{
+            &__title{
+                font-size: 60px;
+            }
+            &__txt{
+                font-size: 40px;
+            }
+            &__btn{
+                font-size: 40px;
+            }
+        }
+    }
 }
