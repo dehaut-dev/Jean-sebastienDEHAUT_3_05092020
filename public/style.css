@@ -409,9 +409,8 @@ h1 {
   }
   .restaurant .restaurant__img {
     border-radius: 20px 20px 0 0;
-    max-height: stretch;
-    max-width: auto;
-    object-fit: cover;
+    box-sizing: content-box;
+    width: 100%;
   }
   .restaurant .restaurant__new {
     font-size: 1.3rem;
