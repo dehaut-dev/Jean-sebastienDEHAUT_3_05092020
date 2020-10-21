@@ -139,8 +139,8 @@
                 padding-bottom: 2rem;
             }
             &__div{
-                max-width: 45%;
                 margin-right: 2rem; 
+                width: 50%;
             }
             &__sep{
                 display: flex;
@@ -149,12 +149,11 @@
             }
             &__img{
                 border-radius: 20px 20px 0 0;
-                max-height: 15rem;
-                width: 100%;
+                max-height: stretch;
+                max-width: auto;
                 object-fit: cover;
             }
             &__new{
-                
             font-size: 1.3rem;
             margin-left: 33%;
             font-weight: bold;

@@ -383,8 +383,8 @@ h1 {
     padding-bottom: 2rem;
   }
   .restaurant .restaurant__div {
-    max-width: 45%;
     margin-right: 2rem;
+    width: 50%;
   }
   .restaurant .restaurant__sep {
     display: flex;
@@ -393,8 +393,8 @@ h1 {
   }
   .restaurant .restaurant__img {
     border-radius: 20px 20px 0 0;
-    max-height: 15rem;
-    width: 100%;
+    max-height: stretch;
+    max-width: auto;
     object-fit: cover;
   }
   .restaurant .restaurant__new {
