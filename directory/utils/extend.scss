@@ -1,0 +1,19 @@
+.heart {
+    width: 25px;
+    height: 25px;
+    background-image: url(../public/images/logo/heart-1.png);
+    background-size: 25px 25px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    &:hover {
+        transition: background-image 500ms;
+        animation: heart 500ms;
+        background-image: url(../public/images/logo/heart-2.png);
+        cursor: pointer;
+    }
+}
+.survol{
+    opacity: 0.9;
+    box-shadow: $opacity2;
+}

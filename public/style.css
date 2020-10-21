@@ -146,10 +146,6 @@ h1 {
   margin-bottom: 3rem;
   transition: opacity 250ms, box-shadow 250ms;
 }
-.explore__btn:hover {
-  opacity: 0.9;
-  box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.6);
-}
 @media screen and (min-width: 768px) {
   .explore .explore__title {
     font-size: 40px;
@@ -322,10 +318,6 @@ h1 {
   margin-left: 0;
   transition: opacity 200ms, box-shadow 200ms;
 }
-.restaurant__div:hover {
-  opacity: 0.9;
-  box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.6);
-}
 .restaurant__img {
   border-radius: 20px 20px 0 0;
   max-height: 11rem;
@@ -352,30 +344,6 @@ h1 {
   float: right;
   margin-right: 1rem;
   margin-top: -3rem;
-  color: white;
-}
-.restaurant__fav i {
-  text-shadow: -1.5px 0 black, 0 1.2px black, 1.5px 0 black, 0 -1.5px black;
-  transition: text-shadow 500ms, color 500ms;
-}
-.restaurant__fav :hover {
-  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
-  color: #9356DC;
-  cursor: pointer;
-}
-.restaurant .img {
-  width: 25px;
-  height: 25px;
-  background-image: url(../public/images/logo/heart-1.png);
-  background-size: 25px 25px;
-  background-position: center center;
-  background-repeat: no-repeat;
-}
-.restaurant .img:hover {
-  transition: background-image 500ms;
-  animation: heart 500ms ease-in-out;
-  background-image: url(../public/images/logo/heart-2.png);
-  cursor: pointer;
 }
 .restaurant__new {
   font-size: 0.9rem;
@@ -567,22 +535,6 @@ h1 {
 .gen__title p {
   font-size: 1.5rem;
 }
-.gen__title .img {
-  width: 25px;
-  height: 25px;
-  padding-top: 3.8rem;
-  background-image: url(../public/images/logo/heart-1.png);
-  background-size: 25px 25px;
-  background-position: center center;
-  background-repeat: no-repeat;
-  object-fit: fill;
-  cursor: pointer;
-}
-.gen__title .img:hover {
-  transition: background-image 850ms linear 0s, animation 850ms linear;
-  animation: heart 850ms linear;
-  background-image: url(../public/images/logo/heart-2.png);
-}
 .gen .menu {
   padding-bottom: 0;
   max-height: fit-content;
@@ -609,8 +561,6 @@ h1 {
 }
 .gen .menu__cont:hover {
   transition: all 200ms;
-  opacity: 0.9;
-  box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.6);
 }
 .gen .menu__cont:hover:hover p:nth-child(1) {
   max-width: 60%;
@@ -874,6 +824,27 @@ h1 {
     transform: rotate(360deg);
   }
 }
+.heart, .restaurant .img, .gen__title .img {
+  width: 25px;
+  height: 25px;
+  background-image: url(../public/images/logo/heart-1.png);
+  background-size: 25px 25px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+.heart:hover, .restaurant .img:hover, .gen__title .img:hover {
+  transition: background-image 500ms;
+  animation: heart 500ms;
+  background-image: url(../public/images/logo/heart-2.png);
+  cursor: pointer;
+}
+
+.survol, .explore__btn:hover, .restaurant__div:hover, .gen .menu__cont:hover {
+  opacity: 0.9;
+  box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.6);
+}
+
 .gen .entrée .menu__cont {
   animation: start 1.5s;
   animation-delay: 0.5s;

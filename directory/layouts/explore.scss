@@ -28,8 +28,7 @@
         transition: opacity 250ms, box-shadow 250ms;
 
         &:hover {
-            opacity: 0.9;
-            box-shadow: $opacity2;
+            @extend .survol;
         }
     }
 

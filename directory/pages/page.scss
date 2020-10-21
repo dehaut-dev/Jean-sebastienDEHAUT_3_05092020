@@ -20,21 +20,7 @@
         }
 
         .img {
-            width: 25px;
-            height: 25px;
-            padding-top: 3.8rem;
-            background-image: url(../public/images/logo/heart-1.png);
-            background-size: 25px 25px;
-            background-position: center center;
-            background-repeat: no-repeat;
-            object-fit: fill;
-            cursor: pointer;
-
-            &:hover {
-                transition: background-image 850ms linear 0s, animation 850ms linear;
-                animation: heart 850ms linear;
-                background-image: url(../public/images/logo/heart-2.png);
-            }
+            @extend .heart;
         }
     }
 
@@ -66,8 +52,7 @@
 
             &:hover {
                 transition: all 200ms;
-                opacity: 0.9;
-                box-shadow: $opacity2;
+                @extend .survol;
 
                 &:hover p:nth-child(1) {
                     max-width: 60%;

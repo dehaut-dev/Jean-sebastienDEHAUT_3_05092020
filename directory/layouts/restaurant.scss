@@ -27,8 +27,7 @@
         transition: opacity 200ms, box-shadow 200ms;
 
         &:hover {
-            opacity: 0.9;
-            box-shadow: $opacity2;
+            @extend .survol;
         }
     }
 
@@ -64,34 +63,10 @@
         float: right;
         margin-right: 1rem;
         margin-top: -3rem;
-        color: white;
-
-        i {
-            text-shadow: -1.5px 0 black, 0 1.2px black, 1.5px 0 black, 0 -1.5px black;
-            transition: text-shadow 500ms, color 500ms;
-        }
-
-        :hover {
-            text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
-            color: $primaire;
-            cursor: pointer;
-        }
     }
 
     .img {
-        width: 25px;
-        height: 25px;
-        background-image: url(../public/images/logo/heart-1.png);
-        background-size: 25px 25px;
-        background-position: center center;
-        background-repeat: no-repeat;
-
-        &:hover {
-            transition: background-image 500ms;
-            animation: heart 500ms ease-in-out;
-            background-image: url(../public/images/logo/heart-2.png);
-            cursor: pointer;
-        }
+        @extend .heart;
     }
 
     &__new {
