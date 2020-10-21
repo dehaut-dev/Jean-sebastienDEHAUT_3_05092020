@@ -70,25 +70,19 @@
     }
 
     &__new {
-        font-family: $txt;
-        font-weight: 100;
-        font-size: 0.85rem;
-        position: absolute;
-        z-index: 1;
-        margin-left: 65%;
+        height: auto;
+        width: fit-content;
+        float: right;
+        margin-right: 1rem;
+        margin-block-start: -3em;
+        transform: translateY(220%);
+        font-family: $txt2;
+        font-size: 0.95rem;
         font-weight: bold;
         background-color: $tertiaire;
         color: darken($color: $tertiaire, $amount: 40%);
         padding: 0.3rem 1.55rem;
         border-radius: 3px;
-    }
-
-    @media screen and (max-width: 320px) {
-        .restaurant {
-            &__new {
-                margin-left: 60%;
-            }
-        }
     }
 
     @media screen and (min-width: 768px) {
@@ -127,7 +121,6 @@
 
             &__new {
                 font-size: 1.5rem;
-                margin-left: 75%;
             }
         }
     }
@@ -157,12 +150,6 @@
 
             &__new {
                 font-size: 1.3rem;
-                margin-left: 33%;
-                font-weight: bold;
-                background-color: $tertiaire;
-                color: darken($color: $tertiaire, $amount: 40%);
-                padding: 0.3rem 1.55rem;
-                border-radius: 3px;
             }
         }
     }
@@ -185,7 +172,6 @@
 
             &__new {
                 font-size: 3rem;
-                margin-left: 35%;
             }
 
             &__txt {

@@ -347,22 +347,19 @@ h1 {
   margin-top: -3rem;
 }
 .restaurant__new {
-  font-family: "Roboto2", sans-serif;
-  font-weight: 100;
-  font-size: 0.85rem;
-  position: absolute;
-  z-index: 1;
-  margin-left: 65%;
+  height: auto;
+  width: fit-content;
+  float: right;
+  margin-right: 1rem;
+  margin-block-start: -3em;
+  transform: translateY(220%);
+  font-family: "Roboto", sans-serif;
+  font-size: 0.95rem;
   font-weight: bold;
   background-color: #99E2D0;
   color: #278870;
   padding: 0.3rem 1.55rem;
   border-radius: 3px;
-}
-@media screen and (max-width: 320px) {
-  .restaurant .restaurant__new {
-    margin-left: 60%;
-  }
 }
 @media screen and (min-width: 768px) {
   .restaurant .restaurant__title {
@@ -391,7 +388,6 @@ h1 {
   }
   .restaurant .restaurant__new {
     font-size: 1.5rem;
-    margin-left: 75%;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -414,12 +410,6 @@ h1 {
   }
   .restaurant .restaurant__new {
     font-size: 1.3rem;
-    margin-left: 33%;
-    font-weight: bold;
-    background-color: #99E2D0;
-    color: #278870;
-    padding: 0.3rem 1.55rem;
-    border-radius: 3px;
   }
 }
 @media screen and (min-width: 2560px) {
@@ -435,7 +425,6 @@ h1 {
   }
   .restaurant .restaurant__new {
     font-size: 3rem;
-    margin-left: 35%;
   }
   .restaurant .restaurant__txt-title {
     font-size: 3rem;
