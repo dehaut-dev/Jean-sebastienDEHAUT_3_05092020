@@ -1,5 +1,6 @@
 @import "./base/police.scss";
 @import "./base/color.scss";
+@import "./layouts/loader.scss";
 @import "./layouts/header.scss";
 @import "./layouts/general.scss";
 @import "./layouts/localisation.scss";
@@ -7,8 +8,7 @@
 @import "./layouts/selection.scss";
 @import "./layouts/restaurant.scss";
 @import "./layouts/footer.scss";
-@import "./layouts/loader.scss";
 @import "./pages/page.scss";
 @import "./pages/page-reponsive.scss";
-@import "./utils/fonction.scss";
+@import "./utils/keyframe.scss";
 @import "./pages/animation-page.scss";
