@@ -1,5 +1,5 @@
 .selection {
-    margin-top: 3rem;
+    margin-top: 3.2rem;
     margin-left: 1rem;
 
     &__title {
@@ -11,7 +11,7 @@
 
     &__btn {
         font-family: $txt;
-        background-color: white;
+        background-color: #f6f6f6;
         font-size: 1rem;
         box-shadow: $opacity;
         border: 0px;
@@ -29,7 +29,7 @@
         }
 
         &:hover {
-            background-color: lighten($color: $primaire, $amount: 30%);
+            background-color: lighten($color: $primaire, $amount: 35%);
             box-shadow: $opacity2;
 
             i {
@@ -40,12 +40,13 @@
     }
 
     &__btn:last-child {
-        margin-bottom: 4.1rem;
+        margin-bottom: 4rem;
     }
 
     &__txt {
         font-family: $txt;
-        padding-left: 1.5rem;
+        padding-left: 1rem;
+        padding-right: 0.5rem;
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;

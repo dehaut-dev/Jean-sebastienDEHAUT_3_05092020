@@ -70,7 +70,9 @@
     }
 
     &__new {
-        font-size: 0.9rem;
+        font-family: $txt;
+        font-weight: 100;
+        font-size: 0.85rem;
         position: absolute;
         z-index: 1;
         margin-left: 65%;
