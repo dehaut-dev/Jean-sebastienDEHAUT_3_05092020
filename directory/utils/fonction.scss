@@ -1,24 +1,58 @@
 @keyframes start {
     0% {
-       opacity: 0;
-       transform: translateY(300%);
-   }
-   50% {
-       opacity: 0.3;
-   }
-   100% {
-       opacity: 1;
-       transform: translateY(0%);
-   }
+        opacity: 0;
+        transform: translateY(300%);
+    }
+
+    50% {
+        opacity: 0.3;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
 }
+
 @keyframes heart {
     0% {
-       opacity: 1;
-   }
-   65% {
-       opacity: 0;
-   }
-   100% {
-       opacity: 1;
-   }
+        opacity: 1;
+    }
+
+    65% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes tour {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@keyframes hide {
+
+    0%,
+    95% {
+        visibility: visible;
+    }
+
+    100% {
+        visibility: hidden;
+    }
+}
+@keyframes custom-loading {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }

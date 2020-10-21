@@ -1,148 +1,163 @@
-@media screen and (min-width: 768px){
-    .fa-arrow-left{
+@media screen and (min-width: 768px) {
+    .fa-arrow-left {
         float: left;
         font-size: 2.5rem;
-        padding-top: 2.5rem;
+        padding-top: 2rem;
         padding-left: 3rem;
         opacity: 80%;
         color: black;
     }
-    .image{
-        &__contenue{
+
+    .image {
+        &__contenue {
             height: 30rem;
             object-fit: cover;
+        }
     }
-    }
-    .gen{
+
+    .gen {
         padding-left: 20%;
         padding-right: 20%;
-        &__title{
-            .img{
+
+        &__title {
+            .img {
                 width: 30px;
                 height: 30px;
                 padding-top: 3rem;
                 background-size: 30px 30px;
-            }  
+            }
         }
     }
-    .menu{
-        &__title{
+
+    .menu {
+        &__title {
             text-align: center;
-             
+
         }
-        
-    } 
+
+    }
 }
-@media screen and (min-width: 1024px){
-    .fa-arrow-left{
+
+@media screen and (min-width: 1024px) {
+    .fa-arrow-left {
         font-size: 3rem;
-        padding-top: 2rem;
+        padding-top: 2.3rem;
         padding-left: 3rem;
     }
-    .gen{
-        &__title{
+
+    .gen {
+        &__title {
             font-size: 2rem;
-            .img{
+
+            .img {
                 width: 40px;
                 height: 40px;
                 padding-top: 5rem;
                 background-size: 40px 40px;
-            }   
+            }
         }
-        .menu{
-            &__title{
+
+        .menu {
+            &__title {
                 font-size: 2rem;
             }
-            &__cont{
+
+            &__cont {
                 margin-bottom: 2rem;
                 height: 6.1rem;
-                h3{
+
+                h3 {
                     font-size: 1.5rem;
                 }
-    
-                &-txt{
-                    p{
+
+                &-txt {
+                    p {
                         font-size: 1.3rem;
                         margin-top: 1rem;
                     }
                 }
-                .valid{
+
+                .valid {
                     margin-top: -5.5rem;
                     height: 7rem;
                     width: 8rem;
                 }
-                i{
+
+                i {
                     padding-top: 2.5rem;
                     font-size: 2rem;
                 }
             }
-            &__buttun{
-                &__order{
+
+            &__buttun {
+                &__order {
                     width: 40%;
                     font-size: 1.5rem;
-                    }
+                }
             }
         }
     }
 }
-@media screen and (min-width: 2560px){
-    .fa-arrow-left{
+
+@media screen and (min-width: 2560px) {
+    .fa-arrow-left {
         font-size: 6rem;
         padding-top: 5rem;
     }
-    .gen{
-        &__title{
+
+    .gen {
+        &__title {
             font-size: 5rem;
-            .img{
+
+            .img {
                 width: 90px;
                 height: 90px;
                 padding-top: 14rem;
                 background-size: 90px 90px;
-            }  
+            }
         }
-        .menu{
-            &__title{
+
+        .menu {
+            &__title {
                 font-size: 4rem;
             }
-            &__cont{
+
+            &__cont {
                 margin-bottom: 2rem;
                 height: 12rem;
                 border-radius: 40px;
                 margin-bottom: 3rem;
-                h3{
+
+                h3 {
                     font-size: 3.5rem;
                 }
-    
-                &-txt{
-                    p{
+
+                &-txt {
+                    p {
                         font-size: 3rem;
                         margin-top: 1rem;
                     }
                 }
-                .valid{
+
+                .valid {
                     margin-top: -10.5rem;
                     height: 15rem;
                     width: 16rem;
                 }
-                i{
+
+                i {
                     padding-top: 30%;
                     font-size: 4rem;
                 }
             }
-            &__buttun{
-                &__order{
+
+            &__buttun {
+                &__order {
                     width: 50%;
                     font-size: 4rem;
                     border-radius: 40px;
-                    }
+                }
             }
         }
     }
 }
-        
-    
-        
-    
-
-
-    

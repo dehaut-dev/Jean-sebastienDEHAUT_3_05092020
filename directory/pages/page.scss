@@ -1,53 +1,61 @@
-.gen{
+.gen {
     padding-right: 1rem;
     padding-left: 1rem;
     border-radius: 25px 25px 0 0;
     background-color: #eaeaea;
-    &__title{
+
+    &__title {
         display: flex;
         justify-content: space-between;
         margin-right: 1rem;
         padding-top: 1rem;
         font-size: 1.2rem;
-        h2{
+
+        h2 {
             font-family: $title;
         }
-        p{
+
+        p {
             font-size: 1.5rem;
         }
-        .img{
+
+        .img {
             width: 25px;
             height: 25px;
             padding-top: 3.8rem;
             background-image: url(../public/images/logo/heart-1.png);
             background-size: 25px 25px;
-            background-position:center center;
+            background-position: center center;
             background-repeat: no-repeat;
             object-fit: fill;
             cursor: pointer;
-            &:hover{
+
+            &:hover {
                 transition: background-image 850ms linear 0s, animation 850ms linear;
                 animation: heart 850ms linear;
                 background-image: url(../public/images/logo/heart-2.png);
             }
-        }   
+        }
     }
 
-    .menu{
+    .menu {
         padding-bottom: 0;
         max-height: fit-content;
-        &__title{
+
+        &__title {
             margin-top: 0;
             font-family: $txt2;
             opacity: 0.7;
             font-size: 1rem;
         }
-        &__spam{
+
+        &__spam {
             padding-bottom: 6px;
             line-height: 3rem;
             border-bottom: 3px solid $tertiaire;
         }
-        &__cont{
+
+        &__cont {
             overflow: hidden;
             height: 4.1rem;
             background-color: rgba(255, 255, 255, 0.831);
@@ -55,19 +63,22 @@
             padding: 0.2rem 0 0.2rem 1rem;
             margin-bottom: 1rem;
             box-shadow: $opacity;
-            &:hover{
+
+            &:hover {
                 transition: all 200ms;
                 opacity: 0.9;
                 box-shadow: $opacity2;
-                &:hover p:nth-child(1){
+
+                &:hover p:nth-child(1) {
                     max-width: 60%;
                 }
             }
-            h3{
+
+            h3 {
                 width: 90%;
-                overflow:hidden;
+                overflow: hidden;
                 text-overflow: ellipsis;
-                white-space:nowrap;
+                white-space: nowrap;
                 margin-top: 0.5rem;
                 margin-bottom: 0;
                 font-family: $txt;
@@ -75,34 +86,40 @@
                 font-size: 1.1rem;
                 transition: width 530ms, transform 900ms;
             }
-            &:hover h3{
+
+            &:hover h3 {
                 width: 60%;
             }
-            &-txt{
+
+            &-txt {
                 display: flex;
                 justify-content: space-between;
                 font-family: $txt2;
                 font-weight: 100;
-                p{
+
+                p {
                     transition: max-width 950ms, transform 950ms;
                     margin-bottom: 0.4rem;
                     margin-top: 0.4rem;
-                    overflow:hidden;
+                    overflow: hidden;
                     text-overflow: ellipsis;
-                    white-space:nowrap;
+                    white-space: nowrap;
                     max-width: 80%;
                     font-size: 0.95rem;
                 }
             }
-            &-prix{
+
+            &-prix {
                 font-family: $txt;
                 padding-right: 1rem;
                 font-weight: 600;
             }
-            &:hover .menu__cont-prix{
+
+            &:hover .menu__cont-prix {
                 transform: translateX(-120%);
             }
-            .valid{
+
+            .valid {
                 transition: transform 1s;
                 display: flex;
                 float: right;
@@ -113,34 +130,35 @@
                 background-color: $tertiaire;
                 transform: translateX(100%);
             }
-            &:hover .valid{
+
+            &:hover .valid {
                 visibility: visible;
                 transform: translateX(40%);
             }
-            i{
+
+            i {
                 padding-left: 20%;
                 padding-right: 20%;
                 padding-top: 1.5rem;
                 font-size: 1.5rem;
                 color: #eaeaea;
-                
+
             }
-            &:hover i{
+
+            &:hover i {
                 animation: tour 1.5s;
                 animation-iteration-count: 1;
-                @keyframes tour {
-                        0% { transform: rotate(0deg); }
-                        100% { transform: rotate(360deg); }
-                    	}
             }
         }
-        &__buttun{
+
+        &__buttun {
             display: flex;
             flex-direction: row;
             justify-content: center;
             padding-bottom: 1.7rem;
             transition: opacity 130ms, box-shadow 130ms;
-            &__order{
+
+            &__order {
                 width: 45%;
                 text-align: center;
                 font-family: $txt;
@@ -152,16 +170,15 @@
                 border: 0px;
                 border-radius: 25px;
                 margin-bottom: 3rem;
-                transition: opacity 250ms, box-shadow 250ms; 
-                &:hover{
+                transition: opacity 250ms, box-shadow 250ms;
+
+                &:hover {
                     opacity: 0.9;
                     box-shadow: $opacity2;
                 }
             }
-            
-            
+
+
         }
     }
 }
-
-   

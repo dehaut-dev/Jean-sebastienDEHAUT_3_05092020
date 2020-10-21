@@ -1,38 +1,43 @@
-.localisation{
-    margin-top:3px;
+.localisation {
+    margin-top: 3px;
     padding-top: 4px;
     display: flex;
     justify-content: center;
     background-color: #eaeaea;
-    
-    &__btn{
+
+    &__btn {
         z-index: 1;
         margin-right: 15px;
         opacity: 0.8;
     }
-    &__txt{
+
+    &__txt {
         font-family: $txt2;
-        font-size: 1rem; 
+        font-size: 1rem;
     }
 }
-@media screen and (min-width: 768px){
-    .localisation{
-        &__btn{
+
+@media screen and (min-width: 768px) {
+    .localisation {
+        &__btn {
             margin-right: 20px;
             font-size: 25px;
         }
-        &__txt{
+
+        &__txt {
             font-size: 25px;
         }
     }
 }
-@media screen and (min-width: 2560px){
-    .localisation{
-        &__btn{
+
+@media screen and (min-width: 2560px) {
+    .localisation {
+        &__btn {
             margin-right: 20px;
             font-size: 40px;
         }
-        &__txt{
+
+        &__txt {
             font-size: 40px;
         }
     }

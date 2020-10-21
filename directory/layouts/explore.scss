@@ -1,18 +1,21 @@
-.explore{
+.explore {
     text-align: center;
     background-color: #f6f6f6;
-    &__title{
+
+    &__title {
         font-family: $txt;
         margin: 0;
         padding: 2rem;
     }
-    &__txt{
+
+    &__txt {
         font-family: $txt2;
         font-weight: 100;
         font-size: 1.1rem;
         padding-bottom: 1rem;
     }
-    &__btn{
+
+    &__btn {
         font-family: $txt2;
         background: $btn__explore;
         color: #FFF;
@@ -22,34 +25,41 @@
         border: 0px;
         border-radius: 25px;
         margin-bottom: 3rem;
-        transition: opacity 250ms, box-shadow 250ms; 
-        &:hover{
+        transition: opacity 250ms, box-shadow 250ms;
+
+        &:hover {
             opacity: 0.9;
             box-shadow: $opacity2;
         }
     }
-    @media screen and (min-width: 768px){
-        .explore{
-            &__title{
+
+    @media screen and (min-width: 768px) {
+        .explore {
+            &__title {
                 font-size: 40px;
             }
-            &__txt{
+
+            &__txt {
                 font-size: 25px;
             }
-            &__btn{
+
+            &__btn {
                 font-size: 25px;
             }
         }
     }
-    @media screen and (min-width: 2560px){
-        .explore{
-            &__title{
+
+    @media screen and (min-width: 2560px) {
+        .explore {
+            &__title {
                 font-size: 60px;
             }
-            &__txt{
+
+            &__txt {
                 font-size: 40px;
             }
-            &__btn{
+
+            &__btn {
                 font-size: 40px;
             }
         }

@@ -1,20 +1,23 @@
-.restaurant{
-    padding-top: 2rem ;
+.restaurant {
+    padding-top: 2rem;
     background-color: #f6f6f6;
     padding-left: 1.5rem;
     padding-bottom: 3rem;
     font-family: $txt;
     font-weight: 100;
     display: block;
-    &__sep{
+
+    &__sep {
         display: block;
     }
-    &__title{
+
+    &__title {
         font-family: $txt;
         font-size: 1.5rem;
         text-align: left;
     }
-    &__div{
+
+    &__div {
         box-shadow: $opacity;
         border: 0px;
         border-radius: 25px;
@@ -22,27 +25,31 @@
         max-width: 95%;
         margin-left: 0;
         transition: opacity 200ms, box-shadow 200ms;
-        &:hover{
+
+        &:hover {
             opacity: 0.9;
             box-shadow: $opacity2;
-        }   
+        }
     }
-    &__img{
+
+    &__img {
         border-radius: 20px 20px 0 0;
         max-height: 11rem;
         width: 100%;
         object-fit: cover;
     }
-    &__txt{
-        &-title{
+
+    &__txt {
+        &-title {
             font-size: 1.2rem;
             margin-left: 1rem;
             margin-top: 0.6rem;
             margin-bottom: 0.4rem;
             font-weight: bold;
-            
+
         }
-        &-txt{
+
+        &-txt {
             font-size: 1.1rem;
             margin: 0;
             padding-bottom: 0.7rem;
@@ -51,37 +58,43 @@
             font-weight: 100;
         }
     }
-    &__fav{
+
+    &__fav {
         font-size: 1.3rem;
         float: right;
         margin-right: 1rem;
         margin-top: -3rem;
         color: white;
-        i{
-            text-shadow: -1.5px 0 black, 0 1.2px black,1.5px 0 black, 0 -1.5px black;
+
+        i {
+            text-shadow: -1.5px 0 black, 0 1.2px black, 1.5px 0 black, 0 -1.5px black;
             transition: text-shadow 500ms, color 500ms;
         }
-        :hover{
-            text-shadow: -1px 0 white, 0 1px white,1px 0 white, 0 -1px white ;
+
+        :hover {
+            text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
             color: $primaire;
-            cursor: pointer; 
+            cursor: pointer;
         }
     }
-    .img{
+
+    .img {
         width: 25px;
         height: 25px;
         background-image: url(../public/images/logo/heart-1.png);
         background-size: 25px 25px;
-        background-position:center center;
+        background-position: center center;
         background-repeat: no-repeat;
-        &:hover{
+
+        &:hover {
             transition: background-image 500ms;
             animation: heart 500ms ease-in-out;
             background-image: url(../public/images/logo/heart-2.png);
             cursor: pointer;
         }
-    }     
-    &__new{
+    }
+
+    &__new {
         font-size: 0.9rem;
         position: absolute;
         z-index: 1;
@@ -92,105 +105,124 @@
         padding: 0.3rem 1.55rem;
         border-radius: 3px;
     }
+
     @media screen and (max-width: 320px) {
-        .restaurant{
-            &__new{
+        .restaurant {
+            &__new {
                 margin-left: 60%;
             }
         }
     }
-    @media screen and (min-width: 768px){
-        .restaurant{
-            &__title{
+
+    @media screen and (min-width: 768px) {
+        .restaurant {
+            &__title {
                 font-size: 2.5rem;
                 text-align: center;
             }
-            &__div{
+
+            &__div {
                 margin-bottom: 3rem;
-                margin-left: 1%;   
+                margin-left: 1%;
             }
-            &__img{
+
+            &__img {
                 border-radius: 20px 20px 0 0;
                 max-height: 20rem;
                 width: 100%;
                 object-fit: cover;
             }
-            &__txt{
-                &-title{
+
+            &__txt {
+                &-title {
                     font-size: 1.5rem;
                 }
-                &-txt{
+
+                &-txt {
                     font-size: 1.5rem;
                 }
             }
-            &__fav{
+
+            &__fav {
                 font-size: 2rem;
                 margin-right: 1.4rem;
-            }     
-            &__new{
+            }
+
+            &__new {
                 font-size: 1.5rem;
                 margin-left: 75%;
             }
         }
     }
-    @media screen and (min-width: 1024px){
-        .restaurant{
-            &__title{
+
+    @media screen and (min-width: 1024px) {
+        .restaurant {
+            &__title {
                 padding-bottom: 2rem;
             }
-            &__div{
-                margin-right: 2rem; 
+
+            &__div {
+                margin-right: 2rem;
                 width: 50%;
             }
-            &__sep{
+
+            &__sep {
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
             }
-            &__img{
+
+            &__img {
                 border-radius: 20px 20px 0 0;
                 max-height: stretch;
                 max-width: auto;
                 object-fit: cover;
             }
-            &__new{
-            font-size: 1.3rem;
-            margin-left: 33%;
-            font-weight: bold;
-            background-color: $tertiaire;
-            color: darken($color: $tertiaire, $amount: 40%);
-            padding: 0.3rem 1.55rem;
-            border-radius: 3px;
+
+            &__new {
+                font-size: 1.3rem;
+                margin-left: 33%;
+                font-weight: bold;
+                background-color: $tertiaire;
+                color: darken($color: $tertiaire, $amount: 40%);
+                padding: 0.3rem 1.55rem;
+                border-radius: 3px;
             }
         }
     }
-    @media screen and (min-width: 2560px){
-        .restaurant{
-            
-            &__title{
+
+    @media screen and (min-width: 2560px) {
+        .restaurant {
+
+            &__title {
                 font-size: 4rem;
             }
-            &__div{
+
+            &__div {
                 max-width: 45%;
-                margin-right: 2rem; 
+                margin-right: 2rem;
             }
-            &__img{
+
+            &__img {
                 max-height: 40rem;
             }
-            &__new{
-            font-size: 3rem;
-            margin-left: 35%;
+
+            &__new {
+                font-size: 3rem;
+                margin-left: 35%;
             }
-            &__txt{
-                &-title{
+
+            &__txt {
+                &-title {
                     font-size: 3rem;
                 }
-                &-txt{
+
+                &-txt {
                     font-size: 3rem;
                 }
             }
-               
+
         }
     }
-    
-}    
+
+}

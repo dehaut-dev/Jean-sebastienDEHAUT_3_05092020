@@ -20,6 +20,7 @@ h2 {
   padding-left: 1.1rem;
   opacity: 80%;
   color: black;
+  justify-content: space-around;
 }
 
 .image__contenue {
@@ -213,7 +214,7 @@ h1 {
     margin-left: 25%;
   }
   .selection .selection__title {
-    padding-left: 20%;
+    padding-left: 15%;
     font-size: 35px;
   }
   .selection .selection__btn {
@@ -512,14 +513,6 @@ h1 {
   overflow: hidden;
   animation: 3s hide;
 }
-@keyframes hide {
-  0%, 95% {
-    visibility: visible;
-  }
-  100% {
-    visibility: hidden;
-  }
-}
 
 .custom-loading-spinner::before {
   content: "";
@@ -547,14 +540,6 @@ h1 {
   width: 50px;
   height: 50px;
   animation: custom-loading 1s infinite ease-in-out;
-}
-@keyframes custom-loading {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
 }
 
 @media screen and (min-width: 2560px) {
@@ -695,14 +680,6 @@ h1 {
   animation: tour 1.5s;
   animation-iteration-count: 1;
 }
-@keyframes tour {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
 .gen .menu__buttun {
   display: flex;
   flex-direction: row;
@@ -733,7 +710,7 @@ h1 {
   .fa-arrow-left {
     float: left;
     font-size: 2.5rem;
-    padding-top: 2.5rem;
+    padding-top: 2rem;
     padding-left: 3rem;
     opacity: 80%;
     color: black;
@@ -762,7 +739,7 @@ h1 {
 @media screen and (min-width: 1024px) {
   .fa-arrow-left {
     font-size: 3rem;
-    padding-top: 2rem;
+    padding-top: 2.3rem;
     padding-left: 3rem;
   }
 
@@ -871,6 +848,30 @@ h1 {
   }
   100% {
     opacity: 1;
+  }
+}
+@keyframes tour {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes hide {
+  0%, 95% {
+    visibility: visible;
+  }
+  100% {
+    visibility: hidden;
+  }
+}
+@keyframes custom-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
 .gen .entrée .menu__cont {

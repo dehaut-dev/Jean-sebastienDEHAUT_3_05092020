@@ -1,14 +1,15 @@
-.selection{
-    margin-top: 3rem ;
+.selection {
+    margin-top: 3rem;
     margin-left: 1rem;
-    
-    &__title{
+
+    &__title {
         font-size: 1.5rem;
         margin-left: -1px;
         text-align: left;
         font-family: $txt;
     }
-    &__btn{
+
+    &__btn {
         font-family: $txt;
         background-color: white;
         font-size: 1rem;
@@ -21,37 +22,43 @@
         width: 90%;
         padding-top: 0.5rem;
         padding-bottom: 0.5rem;
-        transition: box-shadow 150ms, background-color 150ms; 
-        i{
+        transition: box-shadow 150ms, background-color 150ms;
+
+        i {
             transition: color 150ms, opacity 150ms;
         }
-        &:hover{
+
+        &:hover {
             background-color: lighten($color: $primaire, $amount: 30%);
             box-shadow: $opacity2;
-            i{
+
+            i {
                 color: $primaire;
                 opacity: 1;
             }
-        }      
+        }
     }
-    &__btn:last-child{
+
+    &__btn:last-child {
         margin-bottom: 4.1rem;
     }
 
-    &__txt{
+    &__txt {
         font-family: $txt;
         padding-left: 1.5rem;
-        overflow:hidden;
+        overflow: hidden;
         text-overflow: ellipsis;
-        white-space:nowrap;
-        i{
+        white-space: nowrap;
+
+        i {
             font-size: 1.1rem;
             padding-right: 1rem;
             opacity: 0.6;
         }
     }
-    &__number{
-        
+
+    &__number {
+
         font-size: 13px;
         margin-left: -1rem;
         color: #ffffff;
@@ -60,63 +67,78 @@
         padding: 12px 10px;
         line-height: 3px;
     }
-    @media screen and (min-width: 768px){
-        .selection{
+
+    @media screen and (min-width: 768px) {
+        .selection {
             margin-left: 20%;
-            &__title{
+
+            &__title {
                 padding-left: 5rem;
                 font-size: 35px;
             }
-            &__btn{
+
+            &__btn {
                 width: 60%;
                 font-size: 1.3rem;
             }
-            &__txt{
+
+            &__txt {
                 padding-left: 1.5rem;
             }
-            &__number{
+
+            &__number {
                 font-size: 18px;
                 padding: 20px 15px;
             }
         }
     }
-    @media screen and (min-width: 1024px){
-        .selection{
+
+    @media screen and (min-width: 1024px) {
+        .selection {
             margin-left: 25%;
-            &__title{
-                padding-left: 20%;
+
+            &__title {
+                padding-left: 15%;
                 font-size: 35px;
             }
-            &__btn{
+
+            &__btn {
                 width: 50%;
                 padding-top: 1rem;
                 padding-bottom: 1rem;
                 margin-top: 2rem;
                 font-size: 1.3rem;
             }
-            &__txt{
+
+            &__txt {
                 padding-left: 3rem;
-                i{
+
+                i {
                     padding-right: 3rem;
                 }
             }
         }
     }
-    @media screen and (min-width: 2560px){
-        .selection{
-            &__title{
+
+    @media screen and (min-width: 2560px) {
+        .selection {
+            &__title {
                 font-size: 55px;
             }
-            &__btn{
+
+            &__btn {
                 font-size: 3rem;
             }
-            &__txt{
+
+            &__txt {
                 padding-left: 3rem;
-                i{
+
+                i {
                     font-size: 3rem;
                 }
             }
-            &__number{
+
+            &__number {
                 font-size: 35px;
                 border-radius: 50%;
                 padding: 32px 30px;

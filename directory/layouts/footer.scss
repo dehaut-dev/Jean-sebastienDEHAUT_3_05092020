@@ -1,10 +1,11 @@
-.footer{
+.footer {
     background-color: #353535;
     padding-bottom: 1rem;
     padding-left: 0;
     font-family: $txt;
     font-weight: 100;
-    &__img{
+
+    &__img {
         z-index: 1;
         width: 100px;
         height: auto;
@@ -12,72 +13,86 @@
         filter: invert(100%);
         padding-left: 0;
     }
-    &__ul{
+
+    &__ul {
         list-style: none;
         padding-left: 2rem;
-        .fas{
+
+        .fas {
             font-size: 0.7rem;
             margin-right: 6%;
             width: 3px;
         }
     }
-    &__li{
+
+    &__li {
         margin: 0;
         color: #ffffff;
         padding-bottom: 0.4rem;
         font-size: 1rem;
-        &-font{
+
+        &-font {
             margin-right: 5rem;
         }
-        a{
+
+        a {
             text-decoration: none;
             color: #fff;
         }
     }
-    &__li:nth-child(4){
-        
+
+    &__li:nth-child(4) {
+
         padding-bottom: 0rem;
     }
-    @media screen and (min-width: 768px){
-        .footer{
-            &__img{
+
+    @media screen and (min-width: 768px) {
+        .footer {
+            &__img {
                 width: 200px;
             }
-            &__li{
+
+            &__li {
                 font-size: 1.5rem;
             }
-            &__ul{
-                
-                i{
+
+            &__ul {
+
+                i {
                     font-size: 1.3rem;
                 }
-                .fas{
+
+                .fas {
                     font-size: 1rem;
                     margin-right: 2%;
                     width: 3px;
                 }
             }
         }
-    }    
-    @media screen and (min-width: 2560px){
-        .footer{
-            &__img{
+    }
+
+    @media screen and (min-width: 2560px) {
+        .footer {
+            &__img {
                 width: 400px;
             }
-            &__li{
+
+            &__li {
                 font-size: 2.5rem;
             }
-            &__ul{
-                
-                i{
+
+            &__ul {
+
+                i {
                     font-size: 2.5rem;
                 }
-                .fas{
+
+                .fas {
                     font-size: 2rem;
                     margin-right: 2%;
                     width: 3px;
                 }
             }
         }
-    }    
+    }
 }

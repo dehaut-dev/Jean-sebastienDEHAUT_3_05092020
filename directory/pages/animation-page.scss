@@ -1,25 +1,27 @@
-.gen{
-    .entrée{
-        .menu{
-            &__cont{
+.gen {
+    .entrée {
+        .menu {
+            &__cont {
                 animation: start 1.5s;
                 animation-delay: 0.5s;
                 animation-fill-mode: backwards;
             }
         }
     }
-    .plat{
-        .menu{
-            &__cont{
+
+    .plat {
+        .menu {
+            &__cont {
                 animation: start 2s;
                 animation-delay: 1s;
                 animation-fill-mode: backwards;
             }
         }
     }
-    .dessert{
-        .menu{
-            &__cont{
+
+    .dessert {
+        .menu {
+            &__cont {
                 animation: start 2s;
                 animation-delay: 2s;
                 animation-fill-mode: backwards;
