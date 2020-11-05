@@ -7,8 +7,8 @@
     background-repeat: no-repeat;
     object-fit: contain;
     &:hover {
-        transition: background-image 500ms;
         animation: heart 500ms;
+        transition: background-image 500ms;
         background-image: url(../public/images/logo/heart-2.png);
         cursor: pointer;
     }
