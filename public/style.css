@@ -714,7 +714,7 @@ h2 {
   .gen__title .img {
     width: 40px;
     height: 40px;
-    padding-top: 5rem;
+    padding-top: 6rem;
     background-size: 40px 40px;
   }
   .gen .menu__title {
@@ -789,14 +789,6 @@ h2 {
     width: 50%;
     font-size: 4rem;
     border-radius: 40px;
-  }
-}
-@media (max-width: 768px) {
-  .gen__title .img {
-    width: 30px;
-    height: 30px;
-    padding-top: 3rem;
-    background-size: 30px 30px;
   }
 }
 @media (max-width: 320px) {
