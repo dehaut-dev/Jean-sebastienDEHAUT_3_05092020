@@ -1,5 +1,8 @@
+/* Site settings */
 @import "./base/police.scss";
 @import "./base/color.scss";
+
+/* Layouts */
 @import "./layouts/loader.scss";
 @import "./layouts/header.scss";
 @import "./layouts/general.scss";
@@ -8,8 +11,12 @@
 @import "./layouts/selection.scss";
 @import "./layouts/restaurant.scss";
 @import "./layouts/footer.scss";
+
+/* page annexe */
 @import "./pages/page.scss";
 @import "./pages/page-reponsive.scss";
-@import "./utils/keyframe.scss";
-@import "./utils/extend.scss";
-@import "./pages/animation-page.scss";
+
+/* Modules */
+@import "./modules/keyframe.scss";
+@import "./modules/extend.scss";
+@import "./modules/animation-page.scss";
